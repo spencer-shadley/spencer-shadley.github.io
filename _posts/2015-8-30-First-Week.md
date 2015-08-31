@@ -13,5 +13,6 @@ After completing the first week of Object Oriented Programming with Professor Do
 As for the course as a whole, after reviewing the course website, I found an abundance of great material to becoming a better programmer in general. There is an entire section devoted solely to textbooks for various computer science topics such as algorithms and design patterns. Each topic I found was relevant to the computing industry with unit tests and other practical modern methods of development explored. This is unlike many of my other computer science courses where theoretical concepts are taught in-depth without elaborating on how the content would prove useful in the industry. Another topic of interest was GitHub. Although I, as with most students, have already been exposed to GitHub, the focus of the necessity of GitHub is something I appreciate.
 
 <br>
-<strong>Tip of the week:</strong>
+<strong>Tip of the week</strong>
+<br>
 In web development, try to program as little as necessary. With so many tools out there (particularly node modules if that is the framework you choose) most programmatic questions have been solved and code is freely available.
