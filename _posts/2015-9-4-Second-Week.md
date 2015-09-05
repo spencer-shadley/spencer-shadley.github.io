@@ -16,3 +16,12 @@ Using Cygwin, I installed g++. This automatically fetched 4.9, the latest availa
 <br>
 * Go ahead and spend the initial (often painful) overhead of setting up a great developing environment. You only set it up once but will use it for (potentially) months.
 * Use a debugger for C++ like Microsoft Visual Studio (avoid print debugging at all costs)
+
+
+* Item
+* Item
+* Item
+
+- Item
+- Item
+- Item
