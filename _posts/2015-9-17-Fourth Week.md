@@ -14,4 +14,4 @@ Our new project is due this Thursday and we spent a class discussing cool approa
 <br>
 
 #### Tip of the week
-Participate in hackathons! They serve as great interview practice, often come with free food and swag and are just fun to do! There is a hackathon with the Competitive Programming group sponsored by ACM every other Friday and anyone is welcome to join.
+Participate in hackathons! They serve as great interview practice, often come with free food/swag and are just fun to do! There is a hackathon with the Competitive Programming group sponsored by ACM every other Friday and anyone is welcome to join.
