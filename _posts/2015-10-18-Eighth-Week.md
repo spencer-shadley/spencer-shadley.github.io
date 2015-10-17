@@ -10,8 +10,8 @@ OOP and interviews pervade my week yet again! My time is still being divvied bet
 Make sure to prioritize your work and school justly. A huge part of school is to get a great job at the end so sometimes it’s okay to sacrifice a bit of your grade to prepare for interviews.
 <br><br>
 <strong>Helpful Algorithm Resources</strong>
- * Visualizations of common algorithms: http://visualgo.net/ 
- * Visualizations of common data structures: https://www.cs.usfca.edu/~galles/visualization/Algorithms.html 
- * Interview questions broken into language and type: http://www3.cs.stonybrook.edu/~algorith/implement/Java.shtml 
- * More interview questions: http://www.dsalgo.com/2013/02/index.php.html 
- * Big O reference: http://bigocheatsheet.com/ 
+* Visualizations of common algorithms: http://visualgo.net/ 
+* Visualizations of common data structures: https://www.cs.usfca.edu/~galles/visualization/Algorithms.html 
+* Interview questions broken into language and type: http://www3.cs.stonybrook.edu/~algorith/implement/Java.shtml 
+* More interview questions: http://www.dsalgo.com/2013/02/index.php.html 
+* Big O reference: http://bigocheatsheet.com/ 
