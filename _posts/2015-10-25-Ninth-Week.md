@@ -9,5 +9,5 @@ The default arguments setup in C++ is really fascinating and is something I have
 <br><br>
 Our allocator project was due on Thursday and was a bit of a struggle to complete due to interviews constantly intervening as well as one midterm. I worked on the project solo for the first time but managed to get it done a bit early.
 <br><br>
-<strong>Tip of the week</strong>
+<strong>Tip of the week</strong><br>
 Make sure to generalize every solution you create since you never know what future applications you may want from it.
