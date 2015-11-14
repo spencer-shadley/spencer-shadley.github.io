@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Eleventh Week
+title: Twelth Week
 ---
 
 Yet another busy week in my insane semester. More interviews and more object oriented programming. Second midterms kicked off, more final round fly-out interviews, projects circulating, data management growing and object oriented programming’s final project.
@@ -9,5 +9,5 @@ There was a variety of new C++ tools added to the object oriented programming’
 <br><br>
 Our final project is Conway’s game of life. This is the first project where we are allowed (and required) to implement inheritance. We have a Cell class wrapper for an abstract class called AbstractCell as well as two classes called ConwayCell and FredkinCell which inherit from AbstractCell. So far my partner and I have just designed the class structure (members and methods) which took much more time than in previous projects. I have notice that with each project the planning phase takes longer.
 <br><br>
-<strong>Tip of the week</strong>
+<strong>Tip of the week</strong><br>
 When programming, keep in mind that you typically can sacrifice one of three items to make one or both of the other two items improve: time, space or code complexity.
