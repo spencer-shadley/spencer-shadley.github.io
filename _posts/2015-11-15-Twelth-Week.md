@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Twelth Week
+title: Twelfth Week
 ---
 
 Yet another busy week in my insane semester. More interviews and more object oriented programming. Second midterms kicked off, more final round fly-out interviews, projects circulating, data management growing and object oriented programming’s final project.
