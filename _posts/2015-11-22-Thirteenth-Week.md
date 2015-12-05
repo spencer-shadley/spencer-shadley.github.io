@@ -7,5 +7,6 @@ The last project is over!!!!! Object Oriented Programming projects have come to 
 <br><br>
 We also further discussed dynamic binding versus static binding, when that occurs and the benefits of each. Implementing a Shape class helped to drive home the dynamic binding example. Finally, we discussed Java’s reflection which is a really cool way to create a class based on given input. C++ apparently does not support this but we will be building it in future classes.
 <br><br>
-<strong>Tip of the week</strong><br>
+<strong>Tip of the week</strong>
+<br>
 Make <strong>sure</strong> to test your programs in the environment it will be used often. For this project my partner and I developed on Windows with Visual Studio the entire time until the last day at which point everything exploded. Apparently the GCC compiler and Visual Studio compiler disagree about some things and caused some insane headaches at the very end.
