@@ -12,5 +12,8 @@ This was my first course with Downing and I believe he made more of an impact on
 <strong>The Future</strong><br>
 If my schedule allows it I will take Software Engineering simply because Downing has a teaching style that is incredibly clear with beneficial non-theoretical content. I would highly recommend Downing as a professor and OOP as a consequence of that. I think it would be a shame to graduate from UT without having taken at least one Downing class.
 <br><br>
+<strong>Note to Downing</strong><br>
+You made a fantastic course and I would recommend it in a heartbeat. However, there are several grading changes I would suggest. The primary concern I have is regarding quizzes. I was absent due to interviews quite a lot and that was detrimental to my grade (right now it looks like it will likely cost me my A, being replaced with a B.) There should be a number of acceptable absences which then drop some number of quizzes from the grade (last semester I understand they dropped 8 quizzes). I think it is unfair to penalize the students who received out-of-town/all-day interviews or were sick.
+<br><br>
 <strong>Tip of the Week</strong><br>
 Don’t take easy courses to merely receive your degree. Being at such an esteemed university gives you the ability to actually learn from your courses. Be willing to suffer through at least a course or two to receive a full education.
