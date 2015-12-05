@@ -12,5 +12,5 @@ This was my first course with Downing and I believe he made more of an impact on
 <strong>The Future</strong><br>
 If my schedule allows it I will take Software Engineering simply because Downing has a teaching style that is incredibly clear with beneficial non-theoretical content. I would highly recommend Downing as a professor and OOP as a consequence of that. I think it would be a shame to graduate from UT without having taken at least one Downing class.
 <br><br>
-<strong>Tip of the Week</strong>
+<strong>Tip of the Week</strong><br>
 Don’t take easy courses to merely receive your degree. Being at such an esteemed university gives you the ability to actually learn from your courses. Be willing to suffer through at least a course or two to receive a full education.
