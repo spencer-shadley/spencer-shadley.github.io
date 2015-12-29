@@ -1,9 +1,0 @@
----
-layout: post
-title: Seventh Week
----
-
-This week was insane! We had our first Object Oriented Programming exam and for myself I had to balance that with my first Debugging and Verifying Programs assignment, an upcoming Data Management exam, other homework and studying for my interviews with Google, Microsoft, Twitter and Palantir! It’s been a stressful week and another difficult week is ahead (after that I hope it will calm down though!) Prior to the Object Oriented Programming exam we learned more about implementing and using iterators as well as operator overloading. Using this I practiced at home with a stack and range iterator and (after some help from a season C++ friend) managed to get a working for each loop implemented! It was incredibly rewarding to see everything come together so seamlessly with details being abstracted so well and cleanly with the for each loop. The exam itself was much easier than expected. I felt far more prepared than expected and was able to finish the test three times with significant remaining time left. Upon leaving I noticed that I was the only one to have finished upon getting up so I understand the exam may not have been as easy for everyone. Just one more object oriented exam to go! Aside from the above we also discussed a bit more about references, addresses, pointers, etc. in C++. With all of this new knowledge I am quite excited to begin the next project which will likely be released on Monday.
-<br><br>
-<strong>Tip of the week</strong><br>
-To study sometimes it’s better not to read over books but rather to just implement code yourself. Also, after seeing some of the cheat sheets on Piazza I would like to say sometimes less is more!

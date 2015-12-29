@@ -1,23 +1,10 @@
-<header class="navigation" role="banner">
-  <div class="navigation-wrapper">
-    <a href="{{ site.baseurl }}" class="logo">
-    	{% if site.logo %}
-      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-      {% else %}
-      <span>{{ site.title }}</span>
-      {% endif %}
-    </a>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
-    	<i class="fa fa-bars"></i>
-    </a>
-    <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
-      	{% for page in site.pages %}
-          {% if page.title and page.main_nav != false %}
-          <li class="nav-link"><a href="{{ page.url | remove_first: '/' | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
-  </div>
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Your Favorite Source of Free Bootstrap Themes</h1>
+            <hr>
+            <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+        </div>
+    </div>
 </header>
