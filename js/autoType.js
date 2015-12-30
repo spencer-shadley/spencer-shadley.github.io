@@ -1,4 +1,4 @@
-var text = "content of text here";
+var text = []; //"content of text here";
 var delay = 50;
 var currentChar = 1;
 var destination = "infoSpot";
@@ -7,9 +7,9 @@ function type() {
     if (document.getElementById) {
         var dest = document.getElementById(destination);
         if (dest) {
-            dest.innerHTML = text.substr(0, currentChar);
+            dest.innerHTML = text[0].substr(0, currentChar);
             currentChar++
-            if (currentChar > text.length) {
+            if (currentChar > text[0].length) {
                 currentChar = 1;
                 setTimeout("type()", 2500);
             }
@@ -27,4 +27,4 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping("am I automatically typing this message on your screen?", 50, "infoSpot");
+startTyping(["am I automatically typing this message on your screen?"], 50, "infoSpot");
