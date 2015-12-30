@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 1;
 var destination = "[set in call to type]";
 
-console.log("testing - 8");
+console.log("testing - 9");
 
 function type() {
     if (document.getElementById) {
@@ -35,4 +35,4 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping(["am I",  "automatically typing", " this message", "on your screen?"], 40, "messages");
+startTyping(["Entrepreneur", "Software Developer", "University of Texas Student"], 40, "messages");
