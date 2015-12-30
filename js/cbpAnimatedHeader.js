@@ -18,6 +18,9 @@ var cbpAnimatedHeader = (function () {
 		changeHeaderOn = 300;
 
 	function init() {
+
+	    alert("made it to init");
+
 		window.addEventListener( 'scroll', function( event ) {
 			if( !didScroll ) {
 				didScroll = true;
