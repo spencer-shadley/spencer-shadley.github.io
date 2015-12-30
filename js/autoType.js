@@ -29,6 +29,6 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping("am I automatically typing this message on your screen?", 300, "infoSpot");
+startTyping("am I automatically typing this message on your screen?", 100, "infoSpot");
 
 // alert("oy oy oy");
