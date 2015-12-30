@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 1;
 var destination = "[set in call to type]";
 
-console.log("testing - untype");
+console.log("testing - untype calls");
 
 function type() {
     if (document.getElementById) {
@@ -36,7 +36,7 @@ function unType() {
 
     console.log("untyping");
 
-    currentWord = currentWord.substr(0, --currentChar);
+    dest.innerHTML = text[currentWord].substr(0, --currentChar);
     setInterval(unType(), delay);
 }
 
