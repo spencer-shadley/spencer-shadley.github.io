@@ -5,7 +5,7 @@ var currentChar = 1;
 var destination = "[set in call to type]";
 var dest = null;
 
-console.log("testing - 1");
+console.log("testing - 2");
 
 function type() {
     if (document.getElementById) {
