@@ -1,34 +1,35 @@
-// alert("yo yo yo");
-
-var text = "content of text here";
-var delay = 50;
+var messages = []; //"[set on call to type]";
+var delay = 0;
+var currentWord = 1;
 var currentChar = 1;
-var destination = "infoSpot";
+var destination = "[set on call to type]";
 
 function type() {
     if (document.getElementById) {
         var dest = document.getElementById(destination);
         if (dest) {
-            dest.innerHTML = text.substr(0, currentChar);
-            currentChar++
-            if (currentChar > text.length) {
-                currentChar = 1;
+            dest.innerHTML = messages[currentWord].substr(0, currentChar);
+            ++currentChar;
+            if (currentChar > messages[currentWord].length) {
+                ++currentWord;
+                if(currentWord > messages.length) currentWord = 1;
                 setTimeout("type()", 2500);
             }
             else {
                 setTimeout("type()", delay);
             }
         }
+        else {
+            console.log("error with destiantion of typed messages");
+        }
     }
 }
 function startTyping(textParam, delayParam, destinationParam) {
-    text = textParam;
+    messages = textParam;
     delay = delayParam;
     currentChar = 1;
     destination = destinationParam;
     type();
 }
 
-startTyping("am I automatically typing this message on your screen?", 50, "infoSpot");
-
-// alert("oy oy oy");
+startTyping(["am I automatically", "typing this message", "on your screen", "?"], 40, "typingMessages");
