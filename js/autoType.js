@@ -1,34 +1,30 @@
-var messages = []; //"[set on call to type]";
-var delay = 0;
-var currentWord = 1;
+var text = "content of text here";
+var delay = 50;
 var currentChar = 1;
-var destination = "[set on call to type]";
+var destination = "infoSpot";
 
 function type() {
-    console.log('call to type');
-    var dest = document.getElementById(destination);
-    if (dest) {
-        dest.innerHTML = messages[currentWord].substr(0, currentChar);
-        ++currentChar;
-        if (currentChar > messages[currentWord].length) {
-            ++currentWord;
-            if(currentWord > messages.length) currentWord = 1;
-            setTimeout("type()", 2500);
+    if (document.getElementById) {
+        var dest = document.getElementById(destination);
+        if (dest) {
+            dest.innerHTML = text.substr(0, currentChar);
+            currentChar++
+            if (currentChar > text.length) {
+                currentChar = 1;
+                setTimeout("type()", 2500);
+            }
+            else {
+                setTimeout("type()", delay);
+            }
         }
-        else {
-            setTimeout("type()", delay);
-        }
-    }
-    else {
-        console.log("error with destiantion of typed messages in dest " + destination);
     }
 }
 function startTyping(textParam, delayParam, destinationParam) {
-    messages = textParam;
+    text = textParam;
     delay = delayParam;
     currentChar = 1;
     destination = destinationParam;
     type();
 }
 
-startTyping(["am I automatically", "typing this message", "on your screen", "?"], 40, "typingMessages");
+startTyping("am I automatically typing this message on your screen?", 50, "infoSpot");
