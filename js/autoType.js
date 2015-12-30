@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 1;
 var destination = "infoSpot";
 
-console.log("testing - 3");
+console.log("testing - 4");
 
 function type() {
     if (document.getElementById) {
