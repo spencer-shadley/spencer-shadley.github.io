@@ -5,7 +5,7 @@ var currentChar = 1;
 var destination = "[set in call to type]";
 var dest = null;
 
-console.log("testing - 8");
+console.log("testing - 9");
 
 function type() {
     if (document.getElementById) {
@@ -46,7 +46,7 @@ function unType() {
             }*/
 
         },
-        1000);
+        delay);
 }
 
 function startTyping(textParam, delayParam, destinationParam) {
