@@ -1,4 +1,4 @@
-var text = []; //"content of text here";
+/*var text = []; //"content of text here";
 var delay = 50;
 var currentWord = 0;
 var currentChar = 1;
@@ -13,7 +13,7 @@ function type() {
             dest.innerHTML = text[currentWord].substr(0, currentChar);
             ++currentChar;
             setTimeout("type()", 2500);
-            /*if (currentChar > text[currentWord].length) {
+            if (currentChar > text[currentWord].length) {
 
                // unType();
 
@@ -27,12 +27,12 @@ function type() {
             }
             else {
                 setTimeout("type()", delay);
-            }*/
+            }
         }
     }
 }
 
-/*function unType() {
+function unType() {
     console.log("unType()");
 
     if (currentChar === 0) { console.log("done untyping"); return; }
@@ -42,7 +42,7 @@ function type() {
     var dest = document.getElementById(destination);
     dest.innerHTML = text[currentWord].substr(0, --currentChar);
     setTimeout("unType()", delay);
-}*/
+}
 
 function startTyping(textParam, delayParam, destinationParam) {
     text = textParam;
@@ -52,4 +52,4 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");
+startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");*/
