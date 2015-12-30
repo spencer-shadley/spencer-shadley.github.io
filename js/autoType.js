@@ -15,14 +15,13 @@ function type() {
             ++currentChar;
             if (currentChar > text[currentWord].length) {
 
-                unType();
+                setTimeout("unType()", 2500);
 
                 currentChar = 1;
                 if (++currentWord === text.length) {
                     currentWord = 0;
                 }
 
-                setTimeout("type()", 2500);
             }
             else
                 setTimeout("type()", delay);
@@ -32,7 +31,10 @@ function type() {
 
 function unType() {
     console.log("unType()");
-    dest.innerHTML = "untype";
+    dest.innerHTML = text[currentWord].substr(0, currentChar - 2);
+
+    if (currentChar === 1)
+        type();
 }
 
 function startTyping(textParam, delayParam, destinationParam) {
