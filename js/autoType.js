@@ -30,7 +30,11 @@ function type() {
 }
 
 function unType() {
-    if (currentChar === 0) return;
+    console.log("unType()");
+
+    if (currentChar === 0) { console.log("done untyping"); return; }
+
+    console.log("untyping");
 
     currentWord = currentWord.substr(0, --currentChar);
     setInterval(unType(), delay);
