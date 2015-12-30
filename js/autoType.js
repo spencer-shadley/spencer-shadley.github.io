@@ -12,16 +12,16 @@ function type() {
         if (dest) {
             dest.innerHTML = text[currentWord].substr(0, currentChar);
             ++currentChar;
+            setTimeout("type()", 2500);
             if (currentChar > text[currentWord].length) {
 
-                currentChar = 1;
                 if (currentWord === text.length - 1) {
                     unType();
                     currentWord = 0;
                 } else
                     ++currentWord;
+                currentChar = 1;
 
-                setTimeout("type()", 2500);
             }
             else {
                 setTimeout("type()", delay);
