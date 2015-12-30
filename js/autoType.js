@@ -20,7 +20,7 @@ function type() {
             }
         }
         else {
-            console.log("error with destiantion of typed messages");
+            console.log("error with destiantion of typed messages in dest " + destination);
         }
     }
 }
