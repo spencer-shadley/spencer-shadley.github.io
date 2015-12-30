@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 1;
 var destination = "[set in call to type]";
 
-console.log("testing - untype calls");
+console.log("testing - 1");
 
 function type() {
     if (document.getElementById) {
@@ -15,10 +15,11 @@ function type() {
             if (currentChar > text[currentWord].length) {
 
                 currentChar = 1;
-                if (currentWord === text.length-1) {
+                if (currentWord === text.length - 1) {
                     unType();
                     currentWord = 0;
-                }
+                } else
+                    ++currentWord;
 
                 setTimeout("type()", 2500);
             }
