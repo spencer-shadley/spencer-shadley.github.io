@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 1;
 var destination = "[set in call to type]";
 
-console.log("testing - 9");
+console.log("testing - 10");
 
 function type() {
     if (document.getElementById) {
@@ -13,11 +13,9 @@ function type() {
             dest.innerHTML = text[currentWord].substr(0, currentChar);
             ++currentChar;
             if (currentChar > text[currentWord].length) {
-                currentChar = 1;
 
-                //currWord + 1 === text.length ? currWord = 0 : ++currentWord;
-                ++currentWord;
-                if (currentWord === text.length) currentWord = 0;
+                currentChar = 1;
+                (++currentWord === text.length) ? (currWord = 0) : --currentWord;
 
                 setTimeout("type()", 2500);
             }
@@ -35,4 +33,4 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping(["Entrepreneur", "Software Developer", "University of Texas Student"], 40, "messages");
+startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 40, "messages");
