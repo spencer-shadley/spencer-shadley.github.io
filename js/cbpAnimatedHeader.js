@@ -8,7 +8,9 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
-var cbpAnimatedHeader = (function() {
+var cbpAnimatedHeader = (function () {
+
+    alert("made it to animated header");
 
 	var docElem = document.documentElement,
 		header = document.querySelector( '.navbar-default' ),
