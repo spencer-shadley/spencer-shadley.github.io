@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 1;
 var destination = "infoSpot";
 
-console.log("testing - 5");
+console.log("testing - 6");
 
 function type() {
     if (document.getElementById) {
@@ -19,7 +19,6 @@ function type() {
                 ++currentWord;
                 //if (currentWord === text.length) currentWord = 0;
 
-                ++currentWord;
                 setTimeout("type()", 2500);
             }
             else {
