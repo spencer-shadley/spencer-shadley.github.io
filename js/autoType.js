@@ -36,6 +36,7 @@ function unType() {
 
     console.log("untyping");
 
+    var dest = document.getElementById(destination);
     dest.innerHTML = text[currentWord].substr(0, --currentChar);
     setInterval(unType(), delay);
 }
