@@ -31,10 +31,14 @@ function type() {
 
 function unType() {
     console.log("unType()");
-    dest.innerHTML = text[currentWord].substr(0, currentChar - 2);
+    dest.innerHTML = text[currentWord].substr(0, --currentChar);
 
-    if (currentChar === 1)
+    if (currentChar === 1) {
         type();//setTimeout("type()", 2500);
+        return;
+    }
+
+    setTimeout("unType", delay);
 }
 
 function startTyping(textParam, delayParam, destinationParam) {
