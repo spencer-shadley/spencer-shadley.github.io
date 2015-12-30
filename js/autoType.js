@@ -15,7 +15,7 @@ function type() {
             if (currentChar > text[currentWord].length) {
 
                 currentChar = 1;
-                if (++currentWord === text.length) {
+                if (currentWord === text.length-1) {
                     unType();
                     currentWord = 0;
                 }
