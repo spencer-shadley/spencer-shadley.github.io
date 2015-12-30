@@ -5,23 +5,22 @@ var currentChar = 1;
 var destination = "[set on call to type]";
 
 function type() {
-    if (document.getElementById) {
-        var dest = document.getElementById(destination);
-        if (dest) {
-            dest.innerHTML = messages[currentWord].substr(0, currentChar);
-            ++currentChar;
-            if (currentChar > messages[currentWord].length) {
-                ++currentWord;
-                if(currentWord > messages.length) currentWord = 1;
-                setTimeout("type()", 2500);
-            }
-            else {
-                setTimeout("type()", delay);
-            }
+    console.log('call to type');
+    var dest = document.getElementById(destination);
+    if (dest) {
+        dest.innerHTML = messages[currentWord].substr(0, currentChar);
+        ++currentChar;
+        if (currentChar > messages[currentWord].length) {
+            ++currentWord;
+            if(currentWord > messages.length) currentWord = 1;
+            setTimeout("type()", 2500);
         }
         else {
-            console.log("error with destiantion of typed messages in dest " + destination);
+            setTimeout("type()", delay);
         }
+    }
+    else {
+        console.log("error with destiantion of typed messages in dest " + destination);
     }
 }
 function startTyping(textParam, delayParam, destinationParam) {
