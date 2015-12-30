@@ -36,7 +36,7 @@ function unType() {
     setTimeout(
         function () {
             console.log("lambda");
-            dest.innerHTML = text[currentWord].substr(0, currentChar - 3);
+            dest.innerHTML = text[currentWord].substr(0, --currentChar);
 
             unType();
 
