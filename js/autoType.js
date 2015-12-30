@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 1;
 var destination = "[set in call to type]";
 
-console.log("testing - 10");
+console.log("testing - untype");
 
 function type() {
     if (document.getElementById) {
@@ -15,7 +15,10 @@ function type() {
             if (currentChar > text[currentWord].length) {
 
                 currentChar = 1;
-                if (++currentWord === text.length) currentWord = 0;
+                if (++currentWord === text.length) {
+                    unType();
+                    currentWord = 0;
+                }
 
                 setTimeout("type()", 2500);
             }
@@ -25,6 +28,14 @@ function type() {
         }
     }
 }
+
+function unType() {
+    if (currentChar === 0) return;
+
+    currentWord = currentWord.substr(0, --currentChar);
+    setInterval(unType(), delay);
+}
+
 function startTyping(textParam, delayParam, destinationParam) {
     text = textParam;
     delay = delayParam;
@@ -33,4 +44,4 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 40, "messages");
+startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");
