@@ -13,7 +13,7 @@ function type() {
             currentChar++
             if (currentChar > text.length) {
                 currentChar = 1;
-                setTimeout("type()", 5000);
+                setTimeout("type()", 2500);
             }
             else {
                 setTimeout("type()", delay);
