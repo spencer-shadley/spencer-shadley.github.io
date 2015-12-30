@@ -17,10 +17,6 @@ function type() {
 
                 unType();
 
-                currentChar = 1;
-                if (++currentWord === text.length) {
-                    currentWord = 0;
-                }
 
             }
             else
@@ -41,6 +37,12 @@ function unType() {
         function () {
             console.log("lambda");
             dest.innerHTML = text[currentWord].substr(0, --currentChar);
+
+            /* currentChar = 1;
+            if (++currentWord === text.length) {
+                currentWord = 0;
+            }*/
+
         },
         1000);
 }
