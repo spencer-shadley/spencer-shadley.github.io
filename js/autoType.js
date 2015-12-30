@@ -35,4 +35,4 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping(["am I automatically typing", " this message on your screen?"], 40, "messages");
+startTyping(["am I",  "automatically typing", " this message", "on your screen?"], 40, "messages");
