@@ -1,4 +1,4 @@
-alert("yo yo yo");
+// alert("yo yo yo");
 
 var text = "content of text here";
 var delay = 50;
@@ -29,6 +29,6 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping("am I automatically typing this message on your screen?", 1000, "infoSpot");
+startTyping("am I automatically typing this message on your screen?", 300, "infoSpot");
 
-alert("oy oy oy");
+// alert("oy oy oy");
