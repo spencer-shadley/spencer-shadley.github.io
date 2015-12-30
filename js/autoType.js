@@ -4,16 +4,17 @@ var currentWord = 0;
 var currentChar = 1;
 var destination = "infoSpot";
 
-console.log("testing - 1");
+console.log("testing - 2");
 
 function type() {
     if (document.getElementById) {
         var dest = document.getElementById(destination);
         if (dest) {
             dest.innerHTML = text[currentWord].substr(0, currentChar);
-            currentChar++
+            ++currentChar;
             if (currentChar > text[currentWord].length) {
                 currentChar = 1;
+                ++currentWord;
                 setTimeout("type()", 2500);
             }
             else {
