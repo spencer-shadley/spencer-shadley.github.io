@@ -5,7 +5,7 @@ var currentChar = 1;
 var destination = "[set in call to type]";
 var dest = null;
 
-console.log("testing - 9");
+console.log("testing - 10");
 
 function type() {
     if (document.getElementById) {
@@ -41,8 +41,6 @@ function unType() {
             console.log("lambda");
             dest.innerHTML = text[currentWord].substr(0, --currentChar);
 
-            unType();
-
             /* currentChar = 1;
             if (++currentWord === text.length) {
                 currentWord = 0;
@@ -50,6 +48,8 @@ function unType() {
 
         },
         delay);
+
+    unType();
 }
 
 function startTyping(textParam, delayParam, destinationParam) {
