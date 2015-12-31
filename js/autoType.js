@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - paper");
+console.log("testing - 1");
 
 function type() {
     console.log("type()");
