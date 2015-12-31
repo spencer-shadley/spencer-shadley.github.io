@@ -13,14 +13,8 @@ function type() {
         if (dest) {
             dest.innerHTML = text[currentWord].substr(0, currentChar);
             ++currentChar;
-            if (currentChar > text[currentWord].length) {
-
-                setTimeout("unType()", 1500);
-
-
-            }
-            else
-                setTimeout("type()", delay);
+            if (currentChar > text[currentWord].length) setTimeout("unType()", 1500);
+            else                                        setTimeout("type()", delay);
         }
     }
 }
@@ -32,6 +26,15 @@ function unType() {
         type();//setTimeout("type()", 2500);
         return;
     }*/
+
+    if (currentChar === 1) {
+        if (currentWord === text.length - 1) {
+            currentWord = 0;
+        } else {
+            ++currentWord;
+        }
+        type();
+    }
 
     setTimeout(
         function () {
