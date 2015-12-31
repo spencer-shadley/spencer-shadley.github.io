@@ -16,8 +16,8 @@ function type() {
 function unType() {
     console.log("unType()");
 
-    dest.innerHTML = text[currentWord].substr(0, --currentChar);
-    if (currentChar === 0) {
+    dest.innerHTML = text[currentWord].substr(0, currentChar);
+    if (--currentChar === 0) {
         if (currentWord + 1 === text.length) currentWord = 0;
         else ++currentWord;
         setTimeout("type()", 500);
@@ -34,4 +34,4 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");
+startTyping(["Software Developer", "The University of Texas Student", "Entrepreneur"], 50, "messages");
