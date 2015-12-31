@@ -21,7 +21,7 @@ function unType() {
         dest.innerHTML = "<br>"; // otherwise page will jump due to line deletion
         if (currentWord + 1 === text.length) currentWord = 0;
         else ++currentWord;
-        setTimeout("type()", 1000);
+        setTimeout("type()", 750);
     } else {
         setTimeout("unType()", delay);
     }
