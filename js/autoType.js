@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 5");
+console.log("testing - 6");
 
 function type() {
     console.log("type()");
@@ -30,9 +30,8 @@ function unType() {
 function startTyping(textParam, delayParam, destinationParam) {
     text = textParam;
     delay = delayParam;
-    currentChar = 1;
     dest = document.getElementById(destinationParam);
-    type();
+    setTimeout("type()", 500);
 }
 
 window.onload = startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");
