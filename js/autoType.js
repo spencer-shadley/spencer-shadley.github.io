@@ -15,7 +15,7 @@ function type() {
             ++currentChar;
             if (currentChar > text[currentWord].length) {
 
-                unType();
+                setTimeout("unType()", 1500);
 
 
             }
