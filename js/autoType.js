@@ -4,7 +4,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 4");
+console.log("testing - 5");
 
 function type() {
     console.log("type()");
@@ -21,9 +21,9 @@ function unType() {
         dest.innerHTML = "<br>"; // otherwise page will jump due to line deletion
         if (currentWord + 1 === text.length) currentWord = 0;
         else ++currentWord;
-        setTimeout("type()", 500);
+        setTimeout("type()", 1000);
     } else {
-        setTimeout("unType()", delay);
+        setTimeout("unType()", delay/2);
     }
 }
 
@@ -35,4 +35,4 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping(["Software Developer", "The University of Texas Student", "Entrepreneur"], 50, "messages");
+startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");
