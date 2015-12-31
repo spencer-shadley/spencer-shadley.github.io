@@ -1,63 +1,51 @@
-var text = []; //"content of text here";
+var text = [];
 var delay = 50;
 var currentWord = 0;
-var currentChar = 1;
-var destination = "[set in call to type]";
+var currentChar = 0;
 var dest = null;
 
-console.log("testing - 10");
+console.log("testing - paper");
 
 function type() {
-    if (document.getElementById) {
-        dest = document.getElementById(destination);
-        if (dest) {
-            dest.innerHTML = text[currentWord].substr(0, currentChar);
-            ++currentChar;
-            if (currentChar > text[currentWord].length) setTimeout("unType()", 1500);
-            else                                        setTimeout("type()", delay);
-        }
-    }
+    console.log("type()");
+    dest.innerHTML = text[currentWord].substr(0, ++currentChar);
+    if (currentChar > text[currentWord].length) setTimeout("unType()", 1500);
+    else                                        setTimeout("type()", delay);
 }
 
 function unType() {
     console.log("unType()");
 
-    /*if (currentChar === 1) {
-        type();//setTimeout("type()", 2500);
-        return;
-    }*/
+    dest.innerHTML = text[currentWord].substr(0, --currentChar);
+    if (currentChar === 0) {
+        ++currentWord; //  TODO: needs wrapper
+        setTimeout("type()", 500);
+    } else {
+        setTimeout("unType()", delay);
+    }
 
-    if (currentChar === 1) {
-        if (currentWord === text.length - 1) {
-            currentWord = 0;
-        } else {
-            ++currentWord;
-        }
-        type();
+    /*if (currentChar === 1) {
+        if (currentWord === text.length - 1)    currentWord = 0;
+        else                                    ++currentWord;
+        setTimeout("type()", 500);
     }
 
     setTimeout(
         function () {
             console.log("lambda");
             dest.innerHTML = text[currentWord].substr(0, currentChar);
-
-            /* currentChar = 1;
-            if (++currentWord === text.length) {
-                currentWord = 0;
-            }*/
-
         },
         delay);
 
     --currentChar;
-    unType();
+    unType();*/
 }
 
 function startTyping(textParam, delayParam, destinationParam) {
     text = textParam;
     delay = delayParam;
     currentChar = 1;
-    destination = destinationParam;
+    dest = document.getElementById(destinationParam);
     type();
 }
 
