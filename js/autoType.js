@@ -35,4 +35,4 @@ function startTyping(textParam, delayParam, destinationParam) {
     type();
 }
 
-startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");
+window.onload = startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");
