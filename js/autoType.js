@@ -26,7 +26,7 @@ function unType() {
         else ++currentWord;
         setTimeout("type()", 750);
     } else {
-        setTimeout("unType()", delay);
+        setTimeout("unType()", delay/2);
     }
 }
 
