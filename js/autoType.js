@@ -10,7 +10,7 @@ var dest = null;
 console.log("testing - 2");
 document.title = "Spencer's Portfolio";
 $('meta[name=description]').remove();
-$('head').append('<meta name="description" content="something about me">');
+$('head').append('<meta name="description" content="A portolio about Spencer Shadley regarding projects, resume, etc.">');
 
 function type() {
     if(debug && trace) console.log("type()");
