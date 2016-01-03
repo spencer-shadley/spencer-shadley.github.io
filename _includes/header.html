@@ -20,6 +20,24 @@
                     width: 100%;
                 }
 
+
+
+
+         
+
+                #messages {
+                    animation: blink-empty 1s infinite;
+                    border-left: transparent solid 1px;
+                    margin: 5px;
+                }
+
+                @keyframes blink-empty {
+                    50% {
+                        border-right: 1px solid #333;
+                    }
+                }
+
+
             </style>
             <table style="width:100%">
             
@@ -30,7 +48,7 @@
                     </td>
 
                     <td >
-                        <p>|</p>
+                        <p>_</p>
                     </td>
 
                     <td class="absorbing-column"></td>
