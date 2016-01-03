@@ -7,11 +7,11 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 3");
+console.log("testing - 1");
 
 function type() {
     if(debug && trace) console.log("type()");
-    dest.innerText = text[currentWord].substr(0, ++currentChar);
+    dest.innerHTML = text[currentWord].substr(0, ++currentChar);
     if (currentChar > text[currentWord].length) setTimeout("unType()", 1500);
     else                                        setTimeout("type()", delay);
 }
@@ -19,9 +19,9 @@ function type() {
 function unType() {
     if (debug && trace) console.log("unType()");
 
-    dest.innerText = text[currentWord].substr(0, currentChar);
+    dest.innerHTML = text[currentWord].substr(0, currentChar);
     if (--currentChar === 0) {
-        dest.innerText = " "; // otherwise page will jump due to line deletion
+        dest.innerHTML = "<br>"; // otherwise page will jump due to line deletion
         if (currentWord + 1 === text.length) currentWord = 0;
         else ++currentWord;
         setTimeout("type()", 750);
