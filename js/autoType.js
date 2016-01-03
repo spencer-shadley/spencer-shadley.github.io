@@ -8,7 +8,7 @@ var currentChar = 0;
 var dest = null;
 
 console.log("testing - 1");
-document.title = "This is the new page title.";
+document.title = "Spencer's Portfolio";
 
 function type() {
     if(debug && trace) console.log("type()");
