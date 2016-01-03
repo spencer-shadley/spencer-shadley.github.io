@@ -7,7 +7,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 1");
+console.log("testing - 2");
 
 function type() {
     if(debug && trace) console.log("type()");
@@ -21,7 +21,7 @@ function unType() {
 
     dest.innerText = text[currentWord].substr(0, currentChar);
     if (--currentChar === 0) {
-        dest.innerText = ""; // otherwise page will jump due to line deletion
+        dest.innerText = " "; // otherwise page will jump due to line deletion
         if (currentWord + 1 === text.length) currentWord = 0;
         else ++currentWord;
         setTimeout("type()", 750);
