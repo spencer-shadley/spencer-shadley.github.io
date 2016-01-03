@@ -21,7 +21,7 @@ function unType() {
 
     dest.innerText = text[currentWord].substr(0, currentChar);
     if (--currentChar === 0) {
-        dest.innerText = "<br>"; // otherwise page will jump due to line deletion
+        dest.innerText = ""; // otherwise page will jump due to line deletion
         if (currentWord + 1 === text.length) currentWord = 0;
         else ++currentWord;
         setTimeout("type()", 750);
