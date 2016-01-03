@@ -9,6 +9,8 @@ var dest = null;
 
 console.log("testing - 1");
 document.title = "Spencer's Portfolio";
+$('meta[name=description]').remove();
+$('head').append('<meta name="description" content="something about me">');
 
 function type() {
     if(debug && trace) console.log("type()");
