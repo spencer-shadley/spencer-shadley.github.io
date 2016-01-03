@@ -3,7 +3,27 @@
         <div class="header-content-inner">
             <h1>Spencer Shadley</h1>
             <hr>
-            <p contenteditable="true" id="messages"><br></p>
+            <!--<p contenteditable="true" id="messages"><br></p>-->
+            <style>
+
+                input, input:focus {
+                    border: none;
+                }
+
+                input {
+                    animation: blink-empty 1s infinite;
+                    border-left: transparent solid 1px;
+                    margin: 5px;
+                }
+
+                @keyframes blink-empty {
+                    50% {
+                        border-left: 1px solid #333;
+                    }
+                }
+
+            </style>
+            <p id="messages"><input id="someInputCursor"/><br></p>
             <a href="#about" class="btn btn-primary btn-xl page-scroll">See More</a>
         </div>
     </div>
