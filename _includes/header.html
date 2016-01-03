@@ -5,18 +5,30 @@
             <hr>
             <style>
 
+                table {
+                    table-layout: auto;
+                    border-collapse: collapse;
+                    width: 100%;
+                }
 
+                table td {
+                    border: 1px solid #ccc;
+                }
+
+                table td.absorbing-column {
+                    width: 100%;
+                }
 
             </style>
             <table style="width:100%">
             
                 <tr>
 
-                    <td style="margin:0; padding:0;">
+                    <td class="absorbing-column">
                         <p id="messages"><br></p>
                     </td>
 
-                    <td style="margin:0; padding:0;">
+                    <td class="absorbing-column">
                         <p>|</p>
                     </td>
 
