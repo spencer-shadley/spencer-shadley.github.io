@@ -3,11 +3,13 @@
     #messages {
         animation: blink-empty 1s infinite;
         border-right: transparent solid 1px;
+        border-right-width: 10px;
     }
 
     @keyframes blink-empty {
         50% {
             border-right: 1px solid #fff;
+            border-right-width: 10px;
         }
     }
 </style>
@@ -18,7 +20,7 @@
         <div class="header-content-inner">
             <h1>Spencer Shadley</h1>
             <hr>
-            <p id="messages" style="display: inline-block; border-right-width: 10px;"></p>
+            <p id="messages" style="display: inline-block;"></p>
             <br>
             <a href="#about" class="btn btn-primary btn-xl page-scroll">See More</a>
         </div>
