@@ -150,14 +150,14 @@ aside {
 // Homepage Header
 
 // random backgrounds
-.androids1 { background: $theme-dark url('../img/androids/1.jpg'); }
-.androids2 { background: $theme-dark url('../img/androids/2.jpg'); }
-.androids3 { background: $theme-dark url('../img/androids/3.jpg'); }
-.androids4 { background: $theme-dark url('../img/androids/4.jpg'); }
-.androids5 { background: $theme-dark url('../img/androids/5.jpg'); }
-.androids6 { background: $theme-dark url('../img/androids/6.jpg'); }
-.androids7 { background: $theme-dark url('../img/androids/7.jpg'); }
-.androids8 { background: $theme-dark url('../img/androids/8.jpg'); }
+.androids1 { background: url('../img/androids/1.jpg'); }
+.androids2 { background: url('../img/androids/2.jpg'); }
+.androids3 { background: url('../img/androids/3.jpg'); }
+//.androids4 { background: $theme-dark url('../img/androids/4.jpg'); }
+//.androids5 { background: $theme-dark url('../img/androids/5.jpg'); }
+//.androids6 { background: $theme-dark url('../img/androids/6.jpg'); }
+//.androids7 { background: $theme-dark url('../img/androids/7.jpg'); }
+//.androids8 { background: $theme-dark url('../img/androids/8.jpg'); }
 
 header {
     position: relative;
@@ -169,6 +169,8 @@ header {
     color: white;
     transition: all 3s ease;
     background-color: $theme-dark;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     .header-content {
         position: relative;
         text-align: center;
