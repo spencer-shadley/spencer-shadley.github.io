@@ -149,13 +149,24 @@ aside {
 
 // Homepage Header
 
+.androids1 {
+    background-image: url('../img/androids/1.jpg');
+}
+
+.androids2 {
+    background-image: url('../img/androids/2.jpg');
+}
+
+.androids3 {
+    background-image: url('../img/androids/3.jpg');
+}
+
 header {
     position: relative;
     width: 100%;
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/androids/a.jpg');
     text-align: center;
     color: white;
     .header-content {
