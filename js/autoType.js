@@ -27,13 +27,14 @@ document.getElementsByTagName('head')[0].appendChild(link);
 
 
 // Background image (header)
+var ogClass = $('header').className;
 var classCycle = ['androids1', 'androids2', 'androids3'];
 
 setInterval(
     function () {
         var randomNumber = Math.floor(Math.random() * classCycle.length);
         var classToAdd = classCycle[randomNumber];
-        $('header').addClass(classToAdd);
+        $('header').className = ogClass + classToAdd;
     }, 1000
 );
 
