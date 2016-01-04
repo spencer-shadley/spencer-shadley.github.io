@@ -32,7 +32,7 @@ var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
 $('header').addClass(classToAdd);
 
-setTimeout("fadeImage()", 5000);
+setInterval("fadeImage()", 5000);
 
 function fadeImage() {
 
