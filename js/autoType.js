@@ -7,7 +7,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 1");
+console.log("testing - 2");
 
 // Title
 document.title = "Spencer's Portfolio";
@@ -22,58 +22,6 @@ link.type = 'image/x-icon';
 link.rel = 'shortcut icon';
 link.href = '../img/favicon.png';
 document.getElementsByTagName('head')[0].appendChild(link);
-
-// Background image (header)
-var classCycle = ['androids1', 'androids2', 'androids3', 'androids4', 'androids5', 'androids6', 'androids7', 'androids8'];
-var randomNumber = Math.floor(Math.random() * classCycle.length);
-var classToAdd = classCycle[randomNumber];
-$('header').addClass(classToAdd);
-
-setInterval("changeImage()", 15000);
-
-function changeImage() {
-
-    // remove old class
-    randomNumber = Math.floor(Math.random() * classCycle.length);
-    $('header').removeClass(classToAdd);
-
-    // add new class
-    classToAdd = classCycle[randomNumber];
-    $('header').addClass(classToAdd);
-}
-
-
-/*
-// Background image (header)
-//var ogClass = $('header').className;
-//console.log(ogClass);
-var classCycle = ['androids1', 'androids2', 'androids3'];
-var randomNumber = Math.floor(Math.random() * classCycle.length);
-var classToAdd = classCycle[randomNumber];
-$('header').addClass = classToAdd;
-
-$('header').fadeOut(500, function () {
-    $(this).css('background', 'url(../img/androids' + 1 + '.jpg)').fadeIn(1000);
-});
-
-setInterval(
-    function () {
-        console.log("running setInterval");
-        console.log("old className: " + $('header').className);
-
-        $('header').removeClass(classToAdd);
-
-        randomNumber = Math.floor(Math.random() * classCycle.length);
-        classToAdd = classCycle[randomNumber];
-
-        $('header').addClass = classToAdd;
-
-        console.log("new className: " + $('header').className);
-    }, 5000
-);
-*/
-
-
 
 function type() {
     if(debug && trace) console.log("type()");
