@@ -33,7 +33,7 @@ var classCycle = ['androids1', 'androids2', 'androids3'];
 var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
 $('header').addClass = classToAdd;
-
+/*
 setInterval(
     function () {
         console.log("running setInterval");
@@ -48,7 +48,7 @@ setInterval(
 
         console.log("new className: " + $('header').className);
     }, 5000
-);
+);*/
 
 
 function type() {
