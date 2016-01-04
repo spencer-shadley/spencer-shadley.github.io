@@ -7,7 +7,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 1");
+console.log("testing - 2");
 
 // Title
 document.title = "Spencer's Portfolio";
