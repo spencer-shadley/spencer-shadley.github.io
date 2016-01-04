@@ -23,9 +23,6 @@ link.rel = 'shortcut icon';
 link.href = '../img/favicon.png';
 document.getElementsByTagName('head')[0].appendChild(link);
 
-
-
-
 // Background image (header)
 var classCycle = ['androids1', 'androids2', 'androids3'];
 var randomNumber = Math.floor(Math.random() * classCycle.length);
