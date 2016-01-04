@@ -150,9 +150,9 @@ aside {
 // Homepage Header
 
 // random backgrounds
-.androids1 { background: $theme-dark url('../img/androids/1.jpg') ; background-size: 100% 100%; }
-.androids2 { background: $theme-dark url('../img/androids/2.jpg') ; background-size: 100% 100%; }
-.androids3 { background: $theme-dark url('../img/androids/3.jpg') ; background-size: 100% 100%; }
+.androids1 { background: $theme-dark url('../img/androids/1.jpg') center;}
+.androids2 { background: $theme-dark url('../img/androids/2.jpg') center;}
+.androids3 { background: $theme-dark url('../img/androids/3.jpg') center;}
 //.androids4 { background: $theme-dark url('../img/androids/4.jpg'); }
 //.androids5 { background: $theme-dark url('../img/androids/5.jpg'); }
 //.androids6 { background: $theme-dark url('../img/androids/6.jpg'); }
@@ -164,7 +164,6 @@ header {
     width: 100%;
     min-height: auto;
     @include background-cover;
-    background-position: center;
     text-align: center;
     color: white;
     transition: all 3s ease;
