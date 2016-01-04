@@ -7,7 +7,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 3");
+console.log("testing - 1");
 
 // Title
 document.title = "Spencer's Portfolio";
@@ -36,8 +36,9 @@ setInterval("fadeImage()", 5000);
 
 function fadeImage() {
 
-    $('#wrapper').fadeOut(1000,function(){
-        $(this).css('background','url(Images/'+color+'.jpg) no-repeat').fadeIn(1000);
+    //$('#wrapper').fadeOut(1000,function(){
+    //    $(this).css('background','url(Images/'+color+'.jpg) no-repeat').fadeIn(1000);
+    //}
 
     // remove old class
     randomNumber = Math.floor(Math.random() * classCycle.length);
