@@ -29,13 +29,14 @@ var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
 $('header').addClass(classToAdd);
 
-setInterval("fadeImage()", 15000);
+setInterval("changeImage()", 15000);
 
-function fadeImage() {
+function changeImage() {
 
     // remove old class
     randomNumber = Math.floor(Math.random() * classCycle.length);
     $('header').removeClass(classToAdd);
+    $('header').fadeOut();
 
     // add new class
     classToAdd = classCycle[randomNumber];
