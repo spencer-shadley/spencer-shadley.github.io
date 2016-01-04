@@ -7,7 +7,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 3");
+console.log("testing - 1");
 
 // Title
 document.title = "Spencer's Portfolio";
@@ -27,7 +27,7 @@ document.getElementsByTagName('head')[0].appendChild(link);
 
 
 // Background image (header)
-var ogClass = $('header').className;
+//var ogClass = $('header').className;
 console.log(ogClass);
 var classCycle = ['androids1', 'androids2', 'androids3'];
 
@@ -36,8 +36,8 @@ setInterval(
         console.log("running setInterval");
         var randomNumber = Math.floor(Math.random() * classCycle.length);
         var classToAdd = classCycle[randomNumber];
-        $('header').className = ogClass + classToAdd;
-    }, 1000
+        $('header').className = classToAdd; //ogClass + classToAdd;
+    }, 5000
 );
 
 
