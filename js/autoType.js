@@ -28,7 +28,7 @@ document.getElementsByTagName('head')[0].appendChild(link);
 
 // Background image (header)
 //var ogClass = $('header').className;
-console.log(ogClass);
+//console.log(ogClass);
 var classCycle = ['androids1', 'androids2', 'androids3'];
 
 setInterval(
