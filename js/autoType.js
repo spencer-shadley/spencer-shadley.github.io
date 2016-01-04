@@ -27,28 +27,13 @@ document.getElementsByTagName('head')[0].appendChild(link);
 
 
 // Background image (header)
-//var ogClass = $('header').className;
-//console.log(ogClass);
 var classCycle = ['androids1', 'androids2', 'androids3'];
 var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
-$('header').addClass = classToAdd;
-/*
-setInterval(
-    function () {
-        console.log("running setInterval");
-        console.log("old className: " + $('header').className);
+$('header').addClass(classToAdd);
 
-        $('header').removeClass(classToAdd);
 
-        randomNumber = Math.floor(Math.random() * classCycle.length);
-        classToAdd = classCycle[randomNumber];
 
-        $('header').addClass = classToAdd;
-
-        console.log("new className: " + $('header').className);
-    }, 5000
-);*/
 
 
 function type() {
