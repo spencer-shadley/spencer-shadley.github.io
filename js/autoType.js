@@ -32,6 +32,7 @@ document.getElementsByTagName('head')[0].appendChild(link);
 var classCycle = ['androids1', 'androids2', 'androids3'];
 var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
+$('header').addClass = classToAdd;
 
 setInterval(
     function () {
@@ -43,7 +44,7 @@ setInterval(
         randomNumber = Math.floor(Math.random() * classCycle.length);
         classToAdd = classCycle[randomNumber];
 
-        $('header').addClass = classToAdd; //ogClass + classToAdd;
+        $('header').addClass = classToAdd;
 
         console.log("new className: " + $('header').className);
     }, 5000
