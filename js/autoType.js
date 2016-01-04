@@ -24,7 +24,7 @@ link.href = '../img/favicon.png';
 document.getElementsByTagName('head')[0].appendChild(link);
 
 // Background image (header)
-var classCycle = ['androids1', 'androids2', 'androids3'];
+var classCycle = ['androids1', 'androids2', 'androids3', 'androids4', 'androids5', 'androids6', 'androids7', 'androids8'];
 var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
 $('header').addClass(classToAdd);
@@ -32,10 +32,6 @@ $('header').addClass(classToAdd);
 setInterval("fadeImage()", 5000);
 
 function fadeImage() {
-
-    //$('#wrapper').fadeOut(1000,function(){
-    //    $(this).css('background','url(Images/'+color+'.jpg) no-repeat').fadeIn(1000);
-    //}
 
     // remove old class
     randomNumber = Math.floor(Math.random() * classCycle.length);
