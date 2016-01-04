@@ -1,6 +1,3 @@
-var debug = false;
-var trace = false;
-
 var text = [];
 var delay = 50;
 var currentWord = 0;
@@ -8,15 +5,12 @@ var currentChar = 0;
 var dest = null;
 
 function type() {
-    if(debug && trace) console.log("type()");
     dest.innerHTML = text[currentWord].substr(0, ++currentChar);
     if (currentChar > text[currentWord].length) setTimeout("unType()", 1500);
     else                                        setTimeout("type()", delay);
 }
 
 function unType() {
-    if (debug && trace) console.log("unType()");
-
     dest.innerHTML = text[currentWord].substr(0, currentChar);
     if (--currentChar === 0) {
         dest.innerHTML = "<br>"; // otherwise page will jump due to line deletion
@@ -29,8 +23,6 @@ function unType() {
 }
 
 function startTyping(textParam, delayParam, destinationParam) {
-    if (debug && trace) console.log("startTyping()");
-
     text = textParam;
     delay = delayParam;
     dest = document.getElementById(destinationParam);
