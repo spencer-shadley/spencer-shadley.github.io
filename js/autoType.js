@@ -7,7 +7,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 1");
+console.log("testing - 2");
 
 // Title
 document.title = "Spencer's Portfolio";
@@ -36,7 +36,6 @@ function changeImage() {
     // remove old class
     randomNumber = Math.floor(Math.random() * classCycle.length);
     $('header').removeClass(classToAdd);
-    $('header').fadeOut();
 
     // add new class
     classToAdd = classCycle[randomNumber];
