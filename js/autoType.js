@@ -32,7 +32,49 @@ var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
 $('header').addClass(classToAdd);
 
+setTimeout("fadeImage()", 5000);
 
+function fadeImage() {
+
+    // remove old class
+    randomNumber = Math.floor(Math.random() * classCycle.length);
+    $('header').removeClass(classToAdd);
+
+    // add new class
+    classToAdd = classCycle[randomNumber];
+    $('header').addClass(classToAdd);
+}
+
+
+/*
+// Background image (header)
+//var ogClass = $('header').className;
+//console.log(ogClass);
+var classCycle = ['androids1', 'androids2', 'androids3'];
+var randomNumber = Math.floor(Math.random() * classCycle.length);
+var classToAdd = classCycle[randomNumber];
+$('header').addClass = classToAdd;
+
+$('header').fadeOut(500, function () {
+    $(this).css('background', 'url(../img/androids' + 1 + '.jpg)').fadeIn(1000);
+});
+
+setInterval(
+    function () {
+        console.log("running setInterval");
+        console.log("old className: " + $('header').className);
+
+        $('header').removeClass(classToAdd);
+
+        randomNumber = Math.floor(Math.random() * classCycle.length);
+        classToAdd = classCycle[randomNumber];
+
+        $('header').addClass = classToAdd;
+
+        console.log("new className: " + $('header').className);
+    }, 5000
+);
+*/
 
 
 
