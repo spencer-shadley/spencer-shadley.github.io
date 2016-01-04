@@ -7,7 +7,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 1");
+console.log("testing - 2");
 
 // Title
 document.title = "Spencer's Portfolio";
@@ -34,9 +34,11 @@ var classCycle = ['androids1', 'androids2', 'androids3'];
 setInterval(
     function () {
         console.log("running setInterval");
+        console.log("old className: " + $('header').className);
         var randomNumber = Math.floor(Math.random() * classCycle.length);
         var classToAdd = classCycle[randomNumber];
         $('header').className = classToAdd; //ogClass + classToAdd;
+        console.log("new className: " + $('header').className);
     }, 5000
 );
 
