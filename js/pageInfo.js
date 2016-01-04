@@ -1,4 +1,4 @@
-console.log("testing - 3");
+console.log("testing - 1");
 
 // Title
 document.title = "Spencer's Portfolio";
