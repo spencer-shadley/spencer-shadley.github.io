@@ -36,12 +36,16 @@ setInterval("fadeImage()", 5000);
 
 function fadeImage() {
 
+    $('#wrapper').fadeOut(1000,function(){
+        $(this).css('background','url(Images/'+color+'.jpg) no-repeat').fadeIn(1000);
+
     // remove old class
     randomNumber = Math.floor(Math.random() * classCycle.length);
     $('header').removeClass(classToAdd);
 
     // add new class
     classToAdd = classCycle[randomNumber];
+
     $('header').addClass(classToAdd);
 }
 
