@@ -7,7 +7,7 @@ var currentWord = 0;
 var currentChar = 0;
 var dest = null;
 
-console.log("testing - 2");
+console.log("testing - 3");
 
 // Title
 document.title = "Spencer's Portfolio";
@@ -29,7 +29,7 @@ var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
 $('header').addClass(classToAdd);
 
-setInterval("fadeImage()", 5000);
+setInterval("fadeImage()", 15000);
 
 function fadeImage() {
 
@@ -39,7 +39,6 @@ function fadeImage() {
 
     // add new class
     classToAdd = classCycle[randomNumber];
-
     $('header').addClass(classToAdd);
 }
 
