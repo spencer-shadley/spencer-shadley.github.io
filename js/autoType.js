@@ -35,5 +35,5 @@ function startTyping(textParam, delayParam, destinationParam) {
 
 window.addEventListener("load", function () {
     setTimeout(startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages"),
-        5000);
+        7000);
 }, false);
