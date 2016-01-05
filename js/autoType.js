@@ -29,7 +29,7 @@ function startTyping(textParam, delayParam, destinationParam) {
     setTimeout("type()", 500);
 }
 
-// start 10s after page load
+// start 3s after page load
 window.addEventListener("load", function () {
     setTimeout(startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages"),
         3000);
