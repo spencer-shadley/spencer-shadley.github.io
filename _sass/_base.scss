@@ -336,6 +336,15 @@ header {
     text-transform: uppercase;
 }
 
+// custom button for portfolio
+.btn-project {
+    @include sans-serif-font;
+    border: none;
+    border-radius: 600px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .btn-xl {
     padding: 15px 30px;
 }
