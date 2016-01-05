@@ -223,6 +223,11 @@ header {
     background-color: $theme-dark;
 }
 
+.project-text {
+    display: block;
+    margin-bottom: 20px;
+}
+
 .dark-link {
     color: $theme-dark;
     font-weight: bold;
