@@ -343,10 +343,15 @@ header {
     border-radius: 4px;
     font-weight: 700;
     text-transform: uppercase;
+    display:block;
 }
 
-.btn-project-outer {
-    margin: 0 20px;
+.btn-project-left {
+    margin-left: 20px;
+}
+
+.btn-project-right {
+    margin-right: 20px;
 }
 
 .btn-xl {
