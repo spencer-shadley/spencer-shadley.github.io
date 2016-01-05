@@ -228,6 +228,10 @@ header {
     font-weight: bold;
 }
 
+.dark-text:hover {
+    color: $theme-primary;
+}
+
 .section-heading {
     margin-top: 0;
 }
