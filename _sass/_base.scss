@@ -228,7 +228,7 @@ header {
     font-weight: bold;
 }
 
-.dark-link:hover {
+.dark-link:hover, .dark-link:focus {
      color: rgba(white, .7) ;
 }
 
