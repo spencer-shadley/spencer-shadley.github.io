@@ -223,13 +223,13 @@ header {
     background-color: $theme-dark;
 }
 
-.dark-text {
+.dark-link {
     color: $theme-dark;
     font-weight: bold;
 }
 
-.dark-text:hover {
-    color: $theme-primary;
+.dark-link:hover {
+     color: rgba(white, .7) ;
 }
 
 .section-heading {
