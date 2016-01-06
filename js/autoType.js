@@ -16,17 +16,15 @@ function unType() {
         dest.innerHTML = "<br>"; // otherwise page will jump due to line deletion
         if (currentWord + 1 === text.length) currentWord = 0;
         else ++currentWord;
-        setTimeout("type()", 750);
-    } else {
-        setTimeout("unType()", delay/2);
-    }
+        setTimeout("type()", 1500); // delay before erasing word
+    } else setTimeout("unType()", delay/2);
 }
 
 function startTyping(textParam, delayParam, destinationParam) {
     text = textParam;
     delay = delayParam;
     dest = document.getElementById(destinationParam);
-    setTimeout("type()", 500);
+    setTimeout("type()", 500); // delay before typing new message
 }
 
 // start 3s after page load
