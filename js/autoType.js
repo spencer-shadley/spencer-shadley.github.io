@@ -20,5 +20,5 @@ function unType() {
     } else setTimeout("unType()", delay/2);
 }
 
-// delay autotype
-setTimeout(type(), 500);
+// delay typing for page to partially load
+setTimeout(type(), 1000);
