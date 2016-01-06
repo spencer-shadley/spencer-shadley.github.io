@@ -25,5 +25,5 @@ window.addEventListener("load", function () {
     text = ["Software Developer", "University of Texas Student", "Entrepreneur"];
     delay = 50;
     dest = document.getElementById("messages");
-    setTimeout("type()", 250);
+    type();
 }, false);
