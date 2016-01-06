@@ -1,4 +1,4 @@
-var text = [];
+var text = new Array();
 var delay = 50;
 var currentWord = 0;
 var currentChar = 0;

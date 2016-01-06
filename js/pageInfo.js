@@ -13,3 +13,13 @@ link.type = 'image/x-icon';
 link.rel = 'shortcut icon';
 link.href = '../img/favicon.png';
 document.getElementsByTagName('head')[0].appendChild(link);
+
+// Preload android images
+function preloadImages() {
+    var images = new Array();
+    for (var i = 1; i <= 9; ++i) {
+        images[i] = new Image();
+        images[i].src = "../img/androids/" + i;
+    }
+}
+setTimeout("preloadImages()", 10000);
