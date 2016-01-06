@@ -20,14 +20,10 @@ function unType() {
     } else setTimeout("unType()", delay/2);
 }
 
-function startTyping(textParam, delayParam, destinationParam) {
-    text = textParam;
-    delay = delayParam;
-    dest = document.getElementById(destinationParam);
-    setTimeout("type()", 200);
-}
-
 // start after page load
 window.addEventListener("load", function () {
-    startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");
+    text = ["Software Developer", "University of Texas Student", "Entrepreneur"];
+    delay = 50;
+    dest = document.getElementById("messages");
+    setTimeout("type()", 250);
 }, false);
