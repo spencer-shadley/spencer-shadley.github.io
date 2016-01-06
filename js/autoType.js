@@ -24,7 +24,7 @@ function startTyping(textParam, delayParam, destinationParam) {
     text = textParam;
     delay = delayParam;
     dest = document.getElementById(destinationParam);
-    setTimeout("type()", 3500);
+    setTimeout("type()", 1000);
 }
 
 // start after page load
