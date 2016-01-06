@@ -21,9 +21,7 @@ function unType() {
 }
 
 // start after page load
-window.addEventListener("load", function () {
-    text = ["Software Developer", "University of Texas Student", "Entrepreneur"];
-    delay = 50;
-    dest = document.getElementById("messages");
-    type();
-}, false);
+text = ["Software Developer", "University of Texas Student", "Entrepreneur"];
+delay = 50;
+dest = document.getElementById("messages");
+type();
