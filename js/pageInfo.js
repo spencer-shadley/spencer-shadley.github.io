@@ -19,7 +19,7 @@ function preloadImages() {
     var images = new Array();
     for (var i = 1; i <= 9; ++i) {
         images[i] = new Image();
-        images[i].src = "../img/androids/" + i;
+        images[i].src = "../img/androids/" + i + ".jpg";
     }
 }
 setTimeout("preloadImages()", 10000);
