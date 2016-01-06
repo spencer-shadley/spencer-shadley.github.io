@@ -24,11 +24,10 @@ function startTyping(textParam, delayParam, destinationParam) {
     text = textParam;
     delay = delayParam;
     dest = document.getElementById(destinationParam);
-    setTimeout("type()", 500);
+    setTimeout("type()", 3500);
 }
 
-// start 3s after page load
+// start after page load
 window.addEventListener("load", function () {
-    setTimeout(startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages"),
-        3000);
+    startTyping(["Software Developer", "University of Texas Student", "Entrepreneur"], 50, "messages");
 }, false);
