@@ -1,8 +1,8 @@
-var text = new Array();
+var text = ["Software Developer", "University of Texas Student", "Entrepreneur"];
 var delay = 50;
 var currentWord = 0;
 var currentChar = 0;
-var dest = null;
+var dest = document.getElementById("messages");;
 
 function type() {
     dest.innerHTML = text[currentWord].substr(0, ++currentChar);
@@ -20,8 +20,5 @@ function unType() {
     } else setTimeout("unType()", delay/2);
 }
 
-// start after page load
-text = ["Software Developer", "University of Texas Student", "Entrepreneur"];
-delay = 50;
-dest = document.getElementById("messages");
-type();
+// delay autotype
+setTimeout(type(), 500);
