@@ -6,7 +6,7 @@ var dest = null;
 
 function type() {
     dest.innerHTML = text[currentWord].substr(0, ++currentChar);
-    if (currentChar > text[currentWord].length) setTimeout("unType()", 1500);
+    if (currentChar > text[currentWord].length) setTimeout("unType()", 3000); // delay before erasing message
     else                                        setTimeout("type()", delay);
 }
 
@@ -16,7 +16,7 @@ function unType() {
         dest.innerHTML = "<br>"; // otherwise page will jump due to line deletion
         if (currentWord + 1 === text.length) currentWord = 0;
         else ++currentWord;
-        setTimeout("type()", 15000); // delay before erasing word
+        setTimeout("type()", 1500); // delay before typing new message
     } else setTimeout("unType()", delay/2);
 }
 
@@ -24,7 +24,7 @@ function startTyping(textParam, delayParam, destinationParam) {
     text = textParam;
     delay = delayParam;
     dest = document.getElementById(destinationParam);
-    setTimeout("type()", 500); // delay before typing new message
+    setTimeout("type()", 500);
 }
 
 // start 3s after page load
