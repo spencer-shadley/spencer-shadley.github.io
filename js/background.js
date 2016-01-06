@@ -4,7 +4,7 @@ var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
 $('header').addClass(classToAdd);
 
-setInterval("changeImage()", 15000);
+setInterval("changeImage()", 30000);
 
 function changeImage() {
 
