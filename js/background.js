@@ -4,15 +4,15 @@ var randomNumber = Math.floor(Math.random() * classCycle.length);
 var classToAdd = classCycle[randomNumber];
 $('header').addClass(classToAdd);
 
-setInterval("changeImage()", 30000);
+setInterval("changeImage()", 25000);
 
 function changeImage() {
 
-    // remove old class
+    // remove old image
     randomNumber = Math.floor(Math.random() * classCycle.length);
     $('header').removeClass(classToAdd);
 
-    // add new class
+    // add new image
     classToAdd = classCycle[randomNumber];
     $('header').addClass(classToAdd);
 }
