@@ -21,4 +21,4 @@ function unType() {
 }
 
 // delay typing for page to partially load
-setTimeout("type()", 2500);
+setTimeout("type()", 3000);
