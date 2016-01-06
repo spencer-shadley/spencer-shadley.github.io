@@ -6,7 +6,7 @@ var dest = null;
 
 function type() {
     dest.innerHTML = text[currentWord].substr(0, ++currentChar);
-    if (currentChar > text[currentWord].length) setTimeout("unType()", 3000); // delay before erasing message
+    if (currentChar > text[currentWord].length) setTimeout("unType()", 2000); // delay before erasing message
     else                                        setTimeout("type()", delay);
 }
 
@@ -16,7 +16,7 @@ function unType() {
         dest.innerHTML = "<br>"; // otherwise page will jump due to line deletion
         if (currentWord + 1 === text.length) currentWord = 0;
         else ++currentWord;
-        setTimeout("type()", 1000); // delay before typing new message
+        setTimeout("type()", 750); // delay before typing new message
     } else setTimeout("unType()", delay/2);
 }
 
