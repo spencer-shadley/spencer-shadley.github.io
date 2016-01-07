@@ -39,11 +39,11 @@
     }
 
     .timeline-body-title {
-        color: lightgray;
+        color: #F8F8F8;
     }
 
     .timeline-body-details {
-        color: gray;
+        color: #F0F0F0;
     }
 
     .timeline > li {
