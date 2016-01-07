@@ -1,4 +1,8 @@
 /** Timeline stlye heavily based on John Smith's solution at https://panossakkos.github.io/personal-jekyll-theme/ **/
+#timeline-heading {
+    color: white;
+}
+
 .timeline {
     position: relative;
     padding: 0;
