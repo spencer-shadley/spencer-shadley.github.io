@@ -23,7 +23,8 @@
     }
 
     p > a {
-        color: #fac8bd;
+        color: white;
+        opacity: 0.7;
     }
 
     p > a:hover {
