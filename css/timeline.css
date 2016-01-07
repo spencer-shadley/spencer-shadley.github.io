@@ -35,11 +35,11 @@
         color: white;
     }
 
-    .timeline-body:nth-child(2) {
+    .timeline-body-title {
         opacity: 0.9;
     }
 
-    .timeline-details {
+    .timeline-body-details {
         opacity: 0.7;
     }
 
