@@ -31,14 +31,13 @@
         color: white;
     }
 
-    .timeline-body:nth-child(1) {
-        color: cyan;
-        opacity: 0.7;
-    }
-
     .timeline-body:nth-child(2) {
         color: white;
         opacity: 0.7;
+    }
+
+    .timeline-details {
+        color: cyan;
     }
 
     .timeline > li {
