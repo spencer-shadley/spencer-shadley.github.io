@@ -37,10 +37,11 @@
 
     .timeline-body-title {
         opacity: 0.9;
+        font-weight: bold;
     }
 
     .timeline-body-details {
-        opacity: 0.7;
+        opacity: 0.8;
     }
 
     .timeline > li {
