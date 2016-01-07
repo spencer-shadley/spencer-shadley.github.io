@@ -22,10 +22,10 @@
         color: white !important;
     }
 
-    /*p > a {
-        color: white;
-        opacity: 0.7;
-    }*/
+    p > a {
+        color: inherit;
+        opacity: inherit;
+    }
 
     p > a:hover {
         color: white;
