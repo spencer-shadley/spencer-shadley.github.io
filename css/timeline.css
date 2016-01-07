@@ -16,9 +16,30 @@
         background-color: #f1f1f1;
     }
 
+
+
+
+
+
+
+    /** PICK UP FROM HERE!!!!!!!!**/
     .timeline-heading>h4 {
-        font-size: 100px;
+        text-transform: uppercase;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .timeline > li {
         position: relative;
