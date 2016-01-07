@@ -1135,7 +1135,7 @@ img {
 }
 .img-circle {
   border-radius: 0%;
-  background-color: yellow;
+  background-color: yellow !important;
 }
 hr {
   margin-top: 20px;
