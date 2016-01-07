@@ -25,6 +25,10 @@
         color: black;
     }
 
+    p > a:hover {
+        color: gray;
+    }
+
     .timeline > li {
         position: relative;
         margin-bottom: 50px;
