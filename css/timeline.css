@@ -36,16 +36,14 @@
     }
 
     .timeline-body > p {
-        color: white;
     }
 
     .timeline-body-title {
-        opacity: 0.8;
-        font-weight: bold;
+        color: lightgray;
     }
 
     .timeline-body-details {
-        opacity: 0.8;
+        color: gray;
     }
 
     .timeline > li {
