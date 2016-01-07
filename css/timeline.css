@@ -21,6 +21,10 @@
         text-transform: uppercase;
     }
 
+    p > a {
+        color: black;
+    }
+
     .timeline > li {
         position: relative;
         margin-bottom: 50px;
