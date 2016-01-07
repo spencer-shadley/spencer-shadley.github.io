@@ -14,7 +14,7 @@ link.rel = 'shortcut icon';
 link.href = '../img/favicon.png';
 document.getElementsByTagName('head')[0].appendChild(link);
 
-// Preload android images
+// Preload images of androids
 function preloadImages() {
     var images = new Array();
     for (var i = 1; i <= 8; ++i) {

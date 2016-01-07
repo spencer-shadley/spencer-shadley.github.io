@@ -16,6 +16,10 @@
         background-color: #f1f1f1;
     }
 
+    .timeline-heading>h4 {
+        font-size: 100px;
+    }
+
     .timeline > li {
         position: relative;
         margin-bottom: 50px;
