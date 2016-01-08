@@ -47,7 +47,7 @@ function rasengan() {
     // create image
     var img = document.createElement("img");
     img.className = "img-circle img-responsive";
-    img.alt = "Easter Egg " + randNum + " Special";
+    img.alt = "Easter Egg Special";
     img.onclick = rasengan;
 
     function setEgg(eggs) {
