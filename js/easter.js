@@ -1,5 +1,4 @@
-console.log('version - 1');
-
+var clicked = false;
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
 var easterImgSrcBase = "../img/easter-eggs/";
@@ -15,6 +14,9 @@ function setImg(newSrc) {
 
 // GISD - Sharingan
 $("#gisd-image").click(function () {
+
+    if (clicked) return;
+    else clicked = true;
 
     // create image
     var img = document.createElement("img");
