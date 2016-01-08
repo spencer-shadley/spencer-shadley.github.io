@@ -1,4 +1,4 @@
-console.log("current version - 3");
+console.log("current version - 1");
 
 /** GISD - Sharingan **/
 $("#gisd-image").click(function () {
@@ -30,7 +30,8 @@ var easterImg = "some HTML string -> use setImg()";
 function setImg(newSrc) {
     easterImg = "<img src='" + easterImgSrcBase + newSrc + "'" +
                     " class = '" + easterImgClass + "'" +
-                    " style='" + easterImgStyle + "'";
+                    " style='" + easterImgStyle + "'" +
+                    " >";
 }
 
 // Android
