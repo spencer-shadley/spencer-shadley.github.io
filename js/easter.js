@@ -1,11 +1,7 @@
-console.log("current version - 1");
+console.log("current version - 2");
 
 /** GISD - Sharingan **/
-$("#gisd-image").click("addSharingan()");
-
-// add to timeline
-function addSharingan() {
-
+$("#gisd-image").click(function () {
     // create image
     var img = document.createElement("img");
     img.className = "img-circle img-responsive";
@@ -23,7 +19,7 @@ function addSharingan() {
     div.appendChild(img);
     li.appendChild(div);
     $("#timeline-list").append(li);
-}
+});
 
 var easterImg = document.createElement("img");
 easterImg.className = "text-center";
