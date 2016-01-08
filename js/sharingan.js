@@ -1,7 +1,6 @@
 // create image
 var img = document.createElement("img");
-img.addClass("img-circle");
-img.addClass("img-responsive");
+img.className = "img-circle img-responsive";
 img.src = "../img/sharingan/msharingan.png";
 img.alt = "Mangekyo Sharingan";
 
@@ -11,9 +10,7 @@ div.className = "timeline-image";
 
 // create li
 var li = document.createElement("li");
-li.addClass("timeline-inverted");
-li.addClass("wow");
-li.addClass("rotateIn");
+li.className = "timeline-inverted wow rotateIn";
 
 // add to timeline
 function addSharingan() {
