@@ -32,7 +32,7 @@ function rasengan() {
     img.alt = "Easter Egg " + randNum + " Special";
     img.onclick = rasengan;
 
-    // Start with Naruto only
+    // Naruto only
     if (eggCount++ <= 3) {
 
         // find a new picture
@@ -50,9 +50,9 @@ function rasengan() {
         }
     }
 
-    // non-Naruto easter-eggs
+    // all easter-eggs
     else {
-        var randNum = Math.floor(Math.random() * 6);
+        var randNum = Math.floor(Math.random() * 10);
         switch (randNum) {
             case 0: img.src = "../img/easter-eggs/dragonball.png"; break;
             case 1: img.src = "../img/easter-eggs/fairytail.png"; break;
@@ -60,6 +60,10 @@ function rasengan() {
             case 3: img.src = "../img/easter-eggs/steins-gate.png"; break;
             case 4: img.src = "../img/easter-eggs/straw-hats.png"; break;
             case 5: img.src = "../img/easter-eggs/white-beard.png"; break;
+            case 6: img.src = "../img/sharingan/msharingan.png"; break;
+            case 7: img.src = "../img/sharingan/msharingan-color.png"; break;
+            case 8: img.src = "../img/sharingan/sharingan.png"; break;
+            case 9: img.src = "../img/easter-eggs/rasengan.png"; break;
         }
     }
 
