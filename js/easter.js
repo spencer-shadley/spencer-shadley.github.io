@@ -57,7 +57,7 @@ function rasengan() {
             case 0: img.src = "../img/easter-eggs/dragonball.png"; break;
             case 1: img.src = "../img/easter-eggs/fairytail.png"; break;
             case 2: img.src = "../img/easter-eggs/geass.png"; break;
-            case 3: img.src = "../img/easter-eggs/stens-gate.png"; break;
+            case 3: img.src = "../img/easter-eggs/steins-gate.png"; break;
             case 4: img.src = "../img/easter-eggs/straw-hats.png"; break;
             case 5: img.src = "../img/easter-eggs/white-beard.png"; break;
         }
