@@ -1,6 +1,3 @@
-/** GISD - Sharingan **/
-$("#gisd-image").click(addSharingan());
-
 // create image
 var img = document.createElement("img");
 img.className = "img-circle img-responsive";
@@ -22,20 +19,26 @@ function addSharingan() {
     $("#timeline-list").append(li);
 }
 
-var easterImg = "";
+// GISD Easter Egg
+$("#gisd-image").click(addSharingan());
 
-function updtImg(newSrc) {
-    easterImg = "<img src='../img/easter-eggs/" + newSrc + "' class='text-center'>";
-}
-
-// Android
 $("#android-image").click(function () {
-    updtImg("android-doughnut.jpg");
+    var alertImg = document.createElement("img");
+    alertImg.src = "../img/sharingan/msharingan.png";
+
+    console.log('clicked android');
+
     bootbox.alert({
         size: 'large',
         title: 'My kind of doughnut! (me at Google HQ)',
-        message: easterImg,
+        message: "<img src='../img/easter-eggs/android-doughnut.jpg' class='text-center'>",
         callback: function () { console.log("bootboxed"); }
     })
 
 });
+
+//<li class="timeline-inverted wow rotateIn">
+//    <div class="timeline-image">
+//        <img class="img-circle img-responsive" src="../img/sharingan/msharingan.png" alt="Mangekyo Sharingan">
+//    </div>
+//</li>
