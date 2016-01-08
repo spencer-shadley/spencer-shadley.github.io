@@ -22,10 +22,12 @@ function addSharingan() {
     $("#timeline-list").append(li);
 }
 
-var easterImg = "";
+var easterImg = document.createElement("img");
+easterImg.className = "text-center";
+//easterImg.style = "";
 
 function updtImg(newSrc) {
-    easterImg = "<img src='../img/easter-eggs/" + newSrc + "' class='text-center'>";
+    easterImg.src = "../img/easter-eggs/" + newSrc;
 }
 
 // Android
