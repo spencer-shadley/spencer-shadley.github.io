@@ -32,7 +32,9 @@ function rasengan() {
         "../img/sharingan/sharingan.png",
         "../img/easter-eggs/rasengan.png"
     ];
-    var geassEggs = ["../img/easter-eggs/geass.png"];
+    var geassEggs = [
+        "../img/easter-eggs/geass.png"
+    ];
     var otherEggs = [
         "../img/easter-eggs/dragonball.png",
         "../img/easter-eggs/fairytail.png",
@@ -50,54 +52,10 @@ function rasengan() {
     img.alt = "Easter Egg Special";
     img.onclick = rasengan;
 
-    function setEgg(eggs) {
-
-        // find a new picture
-        var randNum = Math.floor(Math.random() * eggs.length);
-        while ($.inArray(randNum, chosenNums) != -1)
-            randNum = Math.floor(Math.random() * eggs.length);
-        chosenNums.push(randNum);
-
-        img.src = eggs[randNum];
-    }
-
     var geassQuotes = [ "You don't want it to end here, do you?",
                         "You appear to have a reason for living.",
-                        "If I grant you power, could you go on? I propose a deal—in exchange for this power, you must agree to make my one wish come true. Accept this contract, and you accept its conditions. While living in the world of humans, you will live unlike any other: a different providence, a different time, a different life. The Power of the King will condemn you to a life of solitude. Are you prepared for this?"
+                        "If I grant you power, could you go on? I propose a deal - in exchange for this power, you must agree to make my one wish come true. Accept this contract, and you accept its conditions. While living in the world of humans, you will live unlike any other: a different providence, a different time, a different life. The Power of the King will condemn you to a life of solitude. Are you prepared for this?"
                       ];
-
-    function makeGeassBox() {
-        bootbox.alert({
-            size: 'small',
-            title: 'Contract',
-            message: geassQuotes.pop(),
-            buttons: {
-                success: {
-                    label: "Accept",
-                    className: "btn-success",
-                    callback: function () {
-                        console.log("accepted");
-
-                        if (geassQuotes.empty() !== 0)
-                            makeGeassBox();
-                        else {
-                            console.log("Geass activated.");
-                            setEgg(geassEggs);
-                        }
-
-                    }
-                },
-                danger: {
-                    label: "Reject",
-                    className: "btn-danger",
-                    callback: function () {
-                        console.log("rejected");
-                        setEgg(otherEggs);
-                    }
-                }
-            }
-        });
-    }
 
     // egg picking
     if (eggCount++ < narutoEggs.length) setEgg(narutoEggs);
@@ -115,6 +73,50 @@ function rasengan() {
     div.appendChild(img);
     li.appendChild(div);
     $("#timeline-list").append(li);
+}
+
+function setEgg(eggs) {
+
+    // find a new picture
+    var randNum = Math.floor(Math.random() * eggs.length);
+    while ($.inArray(randNum, chosenNums) != -1)
+        randNum = Math.floor(Math.random() * eggs.length);
+    chosenNums.push(randNum);
+
+    img.src = eggs[randNum];
+}
+
+function makeGeassBox() {
+    bootbox.alert({
+        size: 'small',
+        title: 'Contract',
+        message: geassQuotes.pop(),
+        buttons: {
+            success: {
+                label: "Accept",
+                className: "btn-success",
+                callback: function () {
+                    console.log("accepted");
+
+                    if (geassQuotes.empty() !== 0)
+                        makeGeassBox();
+                    else {
+                        console.log("Geass activated.");
+                        setEgg(geassEggs);
+                    }
+
+                }
+            },
+            danger: {
+                label: "Reject",
+                className: "btn-danger",
+                callback: function () {
+                    console.log("rejected");
+                    setEgg(otherEggs);
+                }
+            }
+        }
+    });
 }
 
 // Android
