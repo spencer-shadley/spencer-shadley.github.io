@@ -1,4 +1,4 @@
-console.log("current version - 2");
+console.log("current version - 3");
 
 /** GISD - Sharingan **/
 $("#gisd-image").click(function () {
@@ -30,7 +30,7 @@ easterImgStr = "initial";
 
 function updtImg(newSrc) {
     easterImg.src = "../img/easter-eggs/" + newSrc;
-    easterImgStr = easterImg.innerHTML
+    easterImgStr = easterImg.innerHTML;
 }
 
 // Android
