@@ -24,7 +24,7 @@ $("#gisd-image").click(function () {
 function rasengan() {
     console.log("rasengan!");
 
-    var randNum = Math.floor(Math.random() * 3);
+    var randNum = Math.floor(Math.random() * 5);
 
     // create image
     var img = document.createElement("img");
@@ -33,9 +33,11 @@ function rasengan() {
     img.onclick = rasengan;
 
     switch (randNum) {
-        case 0: img.src = "../img/sharingan/msharingan.png";        break;
-        case 1: img.src = "../img/sharingan/msharingan-color.png";  break;
-        case 2: img.src = "../img/sharingan/sharingan.png";         break;
+        case 0: img.src = "../img/sharingan/msharingan.png";            break;
+        case 1: img.src = "../img/sharingan/msharingan-color.png";      break;
+        case 2: img.src = "../img/sharingan/sharingan.png";             break;
+        case 2: img.src = "../img/easter-eggs/rasengan.png";            break;
+        case 2: img.src = "../img/easter-eggs/rasengan-violent.png";    break;
     }
 
     // create div
