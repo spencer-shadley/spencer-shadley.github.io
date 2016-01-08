@@ -1,4 +1,4 @@
-console.log(2);
+console.log(1);
 
 var clicked = false;
 var easterImgClass = "text-center";
@@ -52,9 +52,9 @@ function rasengan() {
     img.onclick = "rasengan()";
 
     switch (randNum) {
-        case 0: img.src = "../img/sharingan/msharingan.png";
-        case 1: img.src = "../img/sharingan/msharingan-color.png";
-        case 2: img.src = "../img/sharingan/sharingan.png";
+        case 0: img.src = "../img/sharingan/msharingan.png"; break;
+        case 1: img.src = "../img/sharingan/msharingan-color.png"; break;
+        case 2: img.src = "../img/sharingan/sharingan.png"; break;
     }
 
     // create div
