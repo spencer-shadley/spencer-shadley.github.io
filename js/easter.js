@@ -29,7 +29,7 @@ function rasengan() {
     // create image
     var img = document.createElement("img");
     img.className = "img-circle img-responsive";
-    img.alt = "Mangekyo Sharingan";
+    img.alt = "Easter Egg " + randNum + " Special";
     img.onclick = rasengan;
 
     switch (randNum) {
