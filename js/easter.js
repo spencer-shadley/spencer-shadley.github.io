@@ -1,5 +1,3 @@
-console.log(2);
-
 var clicked = false;
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
@@ -35,9 +33,9 @@ function rasengan() {
     img.onclick = rasengan;
 
     switch (randNum) {
-        case 0: img.src = "../img/sharingan/msharingan.png"; break;
-        case 1: img.src = "../img/sharingan/msharingan-color.png"; break;
-        case 2: img.src = "../img/sharingan/sharingan.png"; break;
+        case 0: img.src = "../img/sharingan/msharingan.png";        break;
+        case 1: img.src = "../img/sharingan/msharingan-color.png";  break;
+        case 2: img.src = "../img/sharingan/sharingan.png";         break;
     }
 
     // create div
