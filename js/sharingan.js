@@ -1,7 +1,7 @@
 console.log("current version - 1");
 
 /** GISD - Sharingan **/
-$("#gisd-image").click(addSharingan());
+/*$("#gisd-image").click(addSharingan());
 
 // create image
 var img = document.createElement("img");
@@ -41,8 +41,8 @@ $("#android-image").click(function () {
         title: 'My kind of doughnut! (me at Google HQ)',
         message: easterImg.innerHTML,
         callback: function () {
-            console.log("bootboxed 2");
+            console.log("bootbox over and out");
         }
     })
 
-});
+});*/
