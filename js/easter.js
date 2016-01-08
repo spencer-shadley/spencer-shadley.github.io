@@ -37,8 +37,10 @@ function rasengan() {
 
         // find a new picture
         var randNum = Math.floor(Math.random() * 4);
-        while ($.inArray(randNum, chosenNums))
+        while ($.inArray(randNum, chosenNums)) {
+            console.log("looping");
             randNum = Math.floor(Math.random() * 4);
+        }
         chosenNums.push(randNum);
 
         switch (randNum) {
