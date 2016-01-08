@@ -40,7 +40,7 @@ $("#gisd-image").click(function () {
 
 function rasengan() {
 
-    var randNum = Math.floor(Math.random() + 1) % 3;
+    var randNum = Math.floor(Math.random() * 3);
 
     // create image
     var img = document.createElement("img");
