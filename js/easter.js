@@ -149,7 +149,7 @@ $("#details-image").click(function () {
     setImg("daisy-straw.jpg");
     bootbox.alert({
         size: 'large',
-        title: 'She helped on the website',
+        title: 'She helped make this site',
         message: easterImg,
         callback: function () {
             console.log("bootbox over and out");
