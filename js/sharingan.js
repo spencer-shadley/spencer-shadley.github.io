@@ -38,7 +38,9 @@ $("#android-image").click(function () {
         size: 'large',
         title: 'My kind of doughnut! (me at Google HQ)',
         message: easterImg.innerHTML,
-        callback: function () { console.log("bootboxed"); }
+        callback: function () {
+            console.log("bootboxed 2");
+        }
     })
 
 });
