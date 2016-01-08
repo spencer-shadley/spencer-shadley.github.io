@@ -41,7 +41,7 @@ $("#gisd-image").click(function () {
 $("#android-image").click(function () {
     setImg("android-doughnut.jpg");
     bootbox.alert({
-        size: 'large',
+        size: 'small',
         title: 'My kind of doughnut! (me at Google HQ)',
         message: easterImg,
         callback: function () {
