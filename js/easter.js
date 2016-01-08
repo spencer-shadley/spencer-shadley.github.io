@@ -52,7 +52,7 @@ function rasengan() {
 
     // all easter-eggs
     else {
-        var randNum = Math.floor(Math.random() * 10);
+        var randNum = Math.floor(Math.random() * 9);
         switch (randNum) {
             case 0: img.src = "../img/easter-eggs/dragonball.png"; break;
             case 1: img.src = "../img/easter-eggs/fairytail.png"; break;
