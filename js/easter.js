@@ -60,13 +60,13 @@ function rasengan() {
 
     // egg picking
     if (eggCount++ < narutoEggs.length) {
-        setEgg(narutoEggs, img, true); // TODO: make setEgg return the string to set
+        setEgg(narutoEggs, true); // TODO: make setEgg return the string to set
     }
     else if (eggCount === 13) {
-        makeGeassBox(img);
+        makeGeassBox();
     }
     else {
-        setEgg(otherEggs, img, false);
+        setEgg(otherEggs, false);
     }
 
     // create div
@@ -80,50 +80,50 @@ function rasengan() {
     div.appendChild(img);
     li.appendChild(div);
     $("#timeline-list").append(li);
-}
 
-function setEgg(eggs, img, naruto) {
+    function setEgg(eggs, naruto) {
 
-    // find a new picture
-    var randNum = Math.floor(Math.random() * eggs.length);
-    while (naruto && $.inArray(randNum, chosenNums) != -1)
-        randNum = Math.floor(Math.random() * eggs.length);
-    chosenNums.push(randNum);
+        // find a new picture
+        var randNum = Math.floor(Math.random() * eggs.length);
+        while (naruto && $.inArray(randNum, chosenNums) != -1)
+            randNum = Math.floor(Math.random() * eggs.length);
+        chosenNums.push(randNum);
 
-    img.src = eggs[randNum];
-}
+        img.src = eggs[randNum];
+    }
 
-function makeGeassBox(img) {
-    bootbox.alert({
-        size: 'small',
-        title: 'Contract',
-        message: geassQuotes.pop(),
-        buttons: {
-            success: {
-                label: "Accept",
-                className: "btn-success",
-                callback: function () {
-                    console.log("accepted");
+    function makeGeassBox() {
+        bootbox.alert({
+            size: 'small',
+            title: 'Contract',
+            message: geassQuotes.pop(),
+            buttons: {
+                success: {
+                    label: "Accept",
+                    className: "btn-success",
+                    callback: function () {
+                        console.log("accepted");
 
-                    if (geassQuotes.empty() !== 0)
-                        makeGeassBox(img);
-                    else {
-                        console.log("Geass activated.");
-                        setEgg(geassEggs, img, false);
+                        if (geassQuotes.empty() !== 0)
+                            makeGeassBox();
+                        else {
+                            console.log("Geass activated.");
+                            setEgg(geassEggs, false);
+                        }
+
                     }
-
-                }
-            },
-            danger: {
-                label: "Reject",
-                className: "btn-danger",
-                callback: function () {
-                    console.log("rejected");
-                    setEgg(otherEggs, img, false);
+                },
+                danger: {
+                    label: "Reject",
+                    className: "btn-danger",
+                    callback: function () {
+                        console.log("rejected");
+                        setEgg(otherEggs, false);
+                    }
                 }
             }
-        }
-    });
+        });
+    }
 }
 
 // Android
