@@ -1,4 +1,4 @@
-console.log('version - 3');
+console.log('version - 1');
 
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
@@ -36,7 +36,7 @@ $("#gisd-image").click(function () {
 });
 
 // Android
-function androidBox() {
+$("#android-image").click(function () {
     setImg("android-doughnut.jpg");
     bootbox.alert({
         size: 'large',
@@ -46,10 +46,10 @@ function androidBox() {
             console.log("bootbox over and out");
         }
     });
-}
+});
 
 // HomeAway
-function homeawayBox() {
+$("#homeaway-image").click(function () {
     setImg("banana.jpg");
     bootbox.alert({
         size: 'large',
@@ -59,10 +59,10 @@ function homeawayBox() {
             console.log("bootbox over and out");
         }
     });
-}
+});
 
 // PayPal
-$("#android-image").click(function () {
+$("#paypal-image").click(function () {
     setImg("paypal-ceo.jpg");
     bootbox.alert({
         size: 'large',
@@ -75,7 +75,7 @@ $("#android-image").click(function () {
 });
 
 // IBM
-$("#android-image").click(function () {
+$("#ibm-image").click(function () {
     setImg("floppy-disk.jpg");
     bootbox.alert({
         size: 'large',
