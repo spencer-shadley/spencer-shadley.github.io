@@ -104,7 +104,7 @@ function rasengan() {
                     callback: function () {
                         console.log("accepted");
 
-                        if (geassQuotes.empty !== 0)
+                        if (geassQuotes.length !== 0)
                             makeGeassBox();
                         else {
                             console.log("Geass activated.");
