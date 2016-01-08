@@ -1,6 +1,16 @@
-console.log("current version - 2");
+var easterImgClass = "text-center";
+var easterImgStyle = "width: 100%; height: auto;";
+var easterImgSrcBase = "../img/easter-eggs/";
+var easterImg = "some HTML string -> use setImg()";
 
-/** GISD - Sharingan **/
+function setImg(newSrc) {
+    easterImg = "<img src='" + easterImgSrcBase + newSrc + "'" +
+                    " class = '" + easterImgClass + "'" +
+                    " style='" + easterImgStyle + "'" +
+                    " >";
+}
+
+// GISD - Sharingan
 $("#gisd-image").click(function () {
 
     // create image
@@ -22,24 +32,51 @@ $("#gisd-image").click(function () {
     $("#timeline-list").append(li);
 });
 
-var easterImgClass = "text-center";
-var easterImgStyle = "width: 100%; height: auto;";
-var easterImgSrcBase = "../img/easter-eggs/";
-var easterImg = "some HTML string -> use setImg()";
-
-function setImg(newSrc) {
-    easterImg = "<img src='" + easterImgSrcBase + newSrc + "'" +
-                    " class = '" + easterImgClass + "'" +
-                    " style='" + easterImgStyle + "'" +
-                    " >";
-}
-
 // Android
 $("#android-image").click(function () {
     setImg("android-doughnut.jpg");
     bootbox.alert({
         size: 'large',
         title: 'My kind of doughnut! (me at Google HQ)',
+        message: easterImg,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
+    });
+});
+
+// HomeAway
+$("#android-image").click(function () {
+    setImg("banana.jpg");
+    bootbox.alert({
+        size: 'large',
+        title: "I don't work there at this time of writing so....here's a funny banana I made :p",
+        message: easterImg,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
+    });
+});
+
+// PayPal
+$("#android-image").click(function () {
+    setImg("paypal-ceo.jpg");
+    bootbox.alert({
+        size: 'large',
+        title: 'Me and Dan Schulman (CEO of PayPal)',
+        message: easterImg,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
+    });
+});
+
+// IBM
+$("#android-image").click(function () {
+    setImg("floppy-disk.jpg");
+    bootbox.alert({
+        size: 'large',
+        title: 'The oldest of companies',
         message: easterImg,
         callback: function () {
             console.log("bootbox over and out");
