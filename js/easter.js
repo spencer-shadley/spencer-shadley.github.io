@@ -1,4 +1,4 @@
-console.log("current version - 2");
+console.log("current version - 3");
 
 /** GISD - Sharingan **/
 $("#gisd-image").click(function () {
@@ -22,32 +22,26 @@ $("#gisd-image").click(function () {
     $("#timeline-list").append(li);
 });
 
-var easterImg = document.createElement("img");
-easterImg.className = "text-center";
-easterImg.style.width = "100%";
-easterImg.style.height = "100%";
-easterImgStr = "initial";
-document.appendChild(easterImg);
+var easterImgClass = "text-center";
+var easterImgStyle = "width: 100%; height: auto;";
+var easterImgSrcBase = "../img/easter-eggs/";
+var easterImg = "some HTML string -> use setImg()";
 
-function updtImg(newSrc) {
-    easterImg.src = "../img/easter-eggs/" + newSrc;
-    easterImgStr = "easterImg.innerHTML";
+function setImg(newSrc) {
+    easterImg = "<img src='" + easterImgSrcBase + newSrc + "'" +
+                    " class = '" + easterImgClass + "'" +
+                    " style='" + easterImgStyle + "'";
 }
 
 // Android
 $("#android-image").click(function () {
-    updtImg("android-doughnut.jpg");
-    console.log(easterImgStr);
-    console.log(easterImg.innerHTML);
-    console.log(easterImg.innerText);
-    console.log(easterImg.toString);
+    setImg("android-doughnut.jpg");
     bootbox.alert({
         size: 'large',
         title: 'My kind of doughnut! (me at Google HQ)',
-        message: easterImgStr,
+        message: easterImg,
         callback: function () {
             console.log("bootbox over and out");
         }
-    })
-
+    });
 });
