@@ -89,8 +89,8 @@ $("#ibm-image").click(function () {
     });
 });
 
-// Creative
-$("#creative-image").click(function () {
+// Interests
+$("#interests-image").click(function () {
     setImg("eyepatch.jpg");
     bootbox.alert({
         size: 'large',
