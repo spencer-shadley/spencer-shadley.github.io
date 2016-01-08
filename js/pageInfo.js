@@ -43,7 +43,7 @@ function preloadEggs() {
     imageLocs.push("../img/easter-eggs/steins-gate.png");
     imageLocs.push("../img/easter-eggs/white-beard.png");
 
-    for (var i = 0; i < imagesLocs.length; ++i) {
+    for (var i = 0; i < imageLocs.length; ++i) {
         images[i] = new Image();
         images[i].src = imageLocs[i];
     }
