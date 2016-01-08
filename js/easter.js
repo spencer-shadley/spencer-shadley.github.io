@@ -1,4 +1,4 @@
-console.log("current version - 1");
+console.log("current version - 2");
 
 /** GISD - Sharingan **/
 $("#gisd-image").click(function () {
@@ -26,7 +26,7 @@ var easterImg = document.createElement("img");
 easterImg.className = "text-center";
 easterImg.style.width = "100%";
 easterImg.style.height = "100%";
-easterImgStr = "";
+easterImgStr = "initial";
 
 function updtImg(newSrc) {
     easterImg.src = "../img/easter-eggs/" + newSrc;
