@@ -15,6 +15,7 @@ li.className = "timeline-inverted wow rotateIn";
 // add to timeline
 function addSharingan() {
     div.appendChild(img);
+    li.append(div);
     $("#timeline-list").append(li);
 }
 
