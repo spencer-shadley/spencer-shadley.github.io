@@ -36,8 +36,8 @@ function rasengan() {
         case 0: img.src = "../img/sharingan/msharingan.png";            break;
         case 1: img.src = "../img/sharingan/msharingan-color.png";      break;
         case 2: img.src = "../img/sharingan/sharingan.png";             break;
-        case 2: img.src = "../img/easter-eggs/rasengan.png";            break;
-        case 2: img.src = "../img/easter-eggs/rasengan-violent.png";    break;
+        case 3: img.src = "../img/easter-eggs/rasengan.png";            break;
+        case 4: img.src = "../img/easter-eggs/rasengan-violent.png";    break;
     }
 
     // create div
