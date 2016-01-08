@@ -25,7 +25,7 @@ $("#gisd-image").click(function () {
     img.className = "img-circle img-responsive";
     img.src = "../img/sharingan/msharingan.png";
     img.alt = "Mangekyo Sharingan";
-    img.onclick = rasengan();
+    img.onclick = rasengan;
 
     // create div
     var div = document.createElement("div");
