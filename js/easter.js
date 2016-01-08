@@ -23,6 +23,7 @@ $("#gisd-image").click(function () {
     img.className = "img-circle img-responsive";
     img.src = "../img/sharingan/msharingan.png";
     img.alt = "Mangekyo Sharingan";
+    img.onclick = "rasengan()";
 
     // create div
     var div = document.createElement("div");
@@ -36,6 +37,35 @@ $("#gisd-image").click(function () {
     li.appendChild(div);
     $("#timeline-list").append(li);
 });
+
+function rasengan() {
+
+    var randNum = Math.floor(Math.random() + 1) % 3;
+
+    // create image
+    var img = document.createElement("img");
+    img.className = "img-circle img-responsive";
+    img.alt = "Mangekyo Sharingan";
+    img.onclick = "rasengan()";
+
+    switch (randNum) {
+        case 0: img.src = "../img/sharingan/msharingan.png";
+        case 1: img.src = "../img/sharingan/msharingan-color.png";
+        case 2: img.src = "../img/sharingan/sharingan.png";
+    }
+
+    // create div
+    var div = document.createElement("div");
+    div.className = "timeline-image";
+
+    // create li
+    var li = document.createElement("li");
+    li.className = "timeline-inverted wow rotateIn";
+
+    div.appendChild(img);
+    li.appendChild(div);
+    $("#timeline-list").append(li);
+}
 
 // Android
 $("#android-image").click(function () {
