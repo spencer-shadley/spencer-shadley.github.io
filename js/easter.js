@@ -1,4 +1,4 @@
-console.log('version - 3');
+console.log('version - 1');
 
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
@@ -45,11 +45,12 @@ $("#android-image").click(function () {
         callback: function () {
             console.log("bootbox over and out");
         }
-    })
+    });
 });
 
 // HomeAway
-$("#android-image").click(function () {
+
+function homeawayBox() {
     setImg("banana.jpg");
     bootbox.alert({
         size: 'large',
@@ -58,8 +59,9 @@ $("#android-image").click(function () {
         callback: function () {
             console.log("bootbox over and out");
         }
-    })
-});
+    });
+}
+document.getElementById("android-image").onclick = "homeawayBox()";
 
 // PayPal
 $("#android-image").click(function () {
@@ -71,7 +73,7 @@ $("#android-image").click(function () {
         callback: function () {
             console.log("bootbox over and out");
         }
-    })
+    });
 });
 
 // IBM
