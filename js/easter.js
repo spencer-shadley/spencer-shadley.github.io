@@ -1,4 +1,4 @@
-console.log(1);
+console.log(2);
 
 var clicked = false;
 var easterImgClass = "text-center";
@@ -20,24 +20,7 @@ $("#gisd-image").click(function () {
     if (clicked) return;
     else clicked = true;
 
-    // create image
-    var img = document.createElement("img");
-    img.className = "img-circle img-responsive";
-    img.src = "../img/sharingan/msharingan.png";
-    img.alt = "Mangekyo Sharingan";
-    img.onclick = rasengan;
-
-    // create div
-    var div = document.createElement("div");
-    div.className = "timeline-image";
-
-    // create li
-    var li = document.createElement("li");
-    li.className = "timeline-inverted wow rotateIn";
-
-    div.appendChild(img);
-    li.appendChild(div);
-    $("#timeline-list").append(li);
+    rasengan();
 });
 
 function rasengan() {
