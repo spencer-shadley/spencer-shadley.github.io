@@ -88,3 +88,29 @@ $("#ibm-image").click(function () {
         }
     });
 });
+
+// Creative
+$("#creative-image").click(function () {
+    setImg("eyepatch.jpg");
+    bootbox.alert({
+        size: 'large',
+        title: 'Why so serious?',
+        message: easterImg,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
+    });
+});
+
+// Details
+$("#details-image").click(function () {
+    setImg("daisy-straw.jpg");
+    bootbox.alert({
+        size: 'large',
+        title: 'She helped on the website',
+        message: easterImg,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
+    });
+});
