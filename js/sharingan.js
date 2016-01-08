@@ -27,11 +27,10 @@ $("#android-image").click(function () {
     alertImg.src = "../img/sharingan/msharingan.png";
 
     console.log('clicked android');
-    alert();
 
     bootbox.alert({
         size: 'large',
-        message: "<img src='../img/sharingan/msharingan.png'>",
+        message: "<img src='../img/sharingan/msharingan.png' class='text-center'>",
         callback: function () { console.log("bootboxed"); }
     })
 
