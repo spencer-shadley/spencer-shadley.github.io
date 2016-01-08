@@ -1,4 +1,4 @@
-console.log("current version - 3");
+console.log("current version - 1");
 
 /** GISD - Sharingan **/
 $("#gisd-image").click(function () {
@@ -36,6 +36,7 @@ function updtImg(newSrc) {
 // Android
 $("#android-image").click(function () {
     updtImg("android-doughnut.jpg");
+    console.log(easterImgStr);
     bootbox.alert({
         size: 'large',
         title: 'My kind of doughnut! (me at Google HQ)',
