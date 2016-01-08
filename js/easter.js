@@ -1,3 +1,8 @@
+console.log("current version - 1");
+
+/** GISD - Sharingan **/
+$("#gisd-image").click(addSharingan());
+
 // create image
 var img = document.createElement("img");
 img.className = "img-circle img-responsive";
@@ -19,26 +24,25 @@ function addSharingan() {
     $("#timeline-list").append(li);
 }
 
-// GISD Easter Egg
-$("#gisd-image").click(addSharingan());
+var easterImg = document.createElement("img");
+easterImg.className = "text-center";
+easterImg.style.width = "100%";
+easterImg.style.height = "100%";
 
+function updtImg(newSrc) {
+    easterImg.src = "../img/easter-eggs/" + newSrc;
+}
+
+// Android
 $("#android-image").click(function () {
-    var alertImg = document.createElement("img");
-    alertImg.src = "../img/sharingan/msharingan.png";
-
-    console.log('clicked android');
-
+    updtImg("android-doughnut.jpg");
     bootbox.alert({
         size: 'large',
         title: 'My kind of doughnut! (me at Google HQ)',
-        message: "<img src='../img/easter-eggs/android-doughnut.jpg' class='text-center'>",
-        callback: function () { console.log("bootboxed"); }
+        message: easterImg.innerHTML,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
     })
 
 });
-
-//<li class="timeline-inverted wow rotateIn">
-//    <div class="timeline-image">
-//        <img class="img-circle img-responsive" src="../img/sharingan/msharingan.png" alt="Mangekyo Sharingan">
-//    </div>
-//</li>

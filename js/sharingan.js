@@ -1,7 +1,7 @@
 console.log("current version - 1");
 
 /** GISD - Sharingan **/
-/*$("#gisd-image").click(addSharingan());
+$("#gisd-image").click(addSharingan());
 
 // create image
 var img = document.createElement("img");
@@ -45,4 +45,4 @@ $("#android-image").click(function () {
         }
     })
 
-});*/
+});
