@@ -9,7 +9,7 @@ function setImg(newSrc) {
                     " class = '" + easterImgClass + "'" +
                     " style='" + easterImgStyle + "'" +
                     " >" + 
-                    "<br>You found an Easter Egg!";
+                    "You found an Easter Egg!";
 }
 
 // GISD - Sharingan
