@@ -93,7 +93,7 @@ function rasengan() {
     }
 
     function makeGeassBox() {
-        bootbox.alert({
+        bootbox.dialog({
             size: 'small',
             title: 'Contract',
             message: geassQuotes.pop(),
