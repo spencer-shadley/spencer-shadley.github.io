@@ -1,7 +1,7 @@
-console.log("current version - 3");
+console.log("current version - 1");
 
 /** GISD - Sharingan **/
-//$("#gisd-image").click(addSharingan());
+$("#gisd-image").click("addSharingan()");
 
 // add to timeline
 function addSharingan() {
