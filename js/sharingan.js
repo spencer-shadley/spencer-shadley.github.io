@@ -36,7 +36,7 @@ $("#android-image").click(function () {
     bootbox.alert({
         size: 'large',
         title: 'My kind of doughnut! (me at Google HQ)',
-        message: easterImg,
+        message: easterImg.innerHTML,
         callback: function () { console.log("bootboxed"); }
     })
 
