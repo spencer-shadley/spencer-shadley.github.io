@@ -1,3 +1,5 @@
+console.log('version 1');
+
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
 var easterImgSrcBase = "../img/easter-eggs/";
@@ -7,7 +9,8 @@ function setImg(newSrc) {
     easterImg = "<img src='" + easterImgSrcBase + newSrc + "'" +
                     " class = '" + easterImgClass + "'" +
                     " style='" + easterImgStyle + "'" +
-                    " >";
+                    " >" + 
+                    "You found an Easter Egg!";
 }
 
 // GISD - Sharingan
