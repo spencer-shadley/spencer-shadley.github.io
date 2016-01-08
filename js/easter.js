@@ -61,7 +61,11 @@ function rasengan() {
         img.src = eggs[randNum];
     }
 
-    // Naruto only
+    function geassEgg() {
+        console.log("You were chosen");
+    }
+
+    // egg picking
     if (eggCount++ < narutoEggs.length) setEgg(narutoEggs);
     else if (eggCount === 10)           geassEgg();
     else                                setEgg(otherEggs);
