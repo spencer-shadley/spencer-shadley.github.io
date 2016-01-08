@@ -23,20 +23,15 @@ function addSharingan() {
 $("#gisd-image").click(addSharingan());
 
 $("#android-image").click(function () {
-    /*var alertDiv = document.createElement("div");
     var alertImg = document.createElement("img");
     alertImg.src = "../img/sharingan/msharingan.png";
-    alertDiv.appendChild(alertImg);
 
     console.log('clicked android');
-    alert();*/
-    bootbox.alert("What's up?", function () {
-        console.log("called bootbox");
-    });
+    alert();
 
     bootbox.alert({
-        size: 'small',
-        message: "<h1>Yo</h1><br><br>More text!",
+        size: 'large',
+        message: "<img src='../img/sharingan/msharingan.png'>",
         callback: function () { console.log("bootboxed"); }
     })
 
