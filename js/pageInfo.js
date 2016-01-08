@@ -24,7 +24,7 @@ setTimeout("preloadImages()", 10000);
 
 // Preload eggs
 function preloadEggs() {
-    var imagesLocs = new Array();
+    var imageLocs = new Array();
     var images = new Array();
 
     imageLocs.push("../img/sharingan/msharingan.png");
