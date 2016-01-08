@@ -24,7 +24,8 @@ function addSharingan() {
 
 var easterImg = document.createElement("img");
 easterImg.className = "text-center";
-//easterImg.style = "";
+easterImg.style.width = "100%";
+easterImg.style.height = "100%";
 
 function updtImg(newSrc) {
     easterImg.src = "../img/easter-eggs/" + newSrc;
