@@ -1,3 +1,5 @@
+console.log(1);
+
 var clicked = false;
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
@@ -39,6 +41,7 @@ $("#gisd-image").click(function () {
 });
 
 function rasengan() {
+    console.log("rasengan!");
 
     var randNum = Math.floor(Math.random() * 3);
 
