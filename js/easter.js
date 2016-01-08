@@ -33,6 +33,7 @@ function rasengan() {
         "../img/easter-eggs/rasengan.png"
     ];
     var geassEggs = [
+        "../img/easter-eggs/geass.png",
         "../img/easter-eggs/geass.png"
     ];
     var otherEggs = [
@@ -58,9 +59,15 @@ function rasengan() {
                       ];
 
     // egg picking
-    if (eggCount++ < narutoEggs.length) setEgg(narutoEggs, img);
-    else if (eggCount === 13)           makeGeassBox();
-    else                                setEgg(otherEggs, img);
+    if (eggCount++ < narutoEggs.length) {
+        setEgg(narutoEggs, img);
+    }
+    else if (eggCount === 13) {
+        makeGeassBox();
+    }
+    else {
+        setEgg(otherEggs, img);
+    }
 
     // create div
     var div = document.createElement("div");
