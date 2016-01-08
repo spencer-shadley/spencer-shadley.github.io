@@ -1,4 +1,4 @@
-console.log('version - 2');
+console.log('version - 3');
 
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
@@ -36,7 +36,7 @@ $("#gisd-image").click(function () {
 });
 
 // Android
-$("#android-image").click(function () {
+function androidBox() {
     setImg("android-doughnut.jpg");
     bootbox.alert({
         size: 'large',
@@ -46,11 +46,10 @@ $("#android-image").click(function () {
             console.log("bootbox over and out");
         }
     });
-});
+}
 
 // HomeAway
 function homeawayBox() {
-    console.log("clicked homeaway");
     setImg("banana.jpg");
     bootbox.alert({
         size: 'large',
