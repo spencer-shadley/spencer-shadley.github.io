@@ -1,4 +1,6 @@
 var clicked = false;
+var eggCount = 0;
+var chosenNums = [];
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
 var easterImgSrcBase = "../img/easter-eggs/";
@@ -24,19 +26,40 @@ $("#gisd-image").click(function () {
 function rasengan() {
     console.log("rasengan!");
 
-    var randNum = Math.floor(Math.random() * 4);
-
     // create image
     var img = document.createElement("img");
     img.className = "img-circle img-responsive";
     img.alt = "Easter Egg " + randNum + " Special";
     img.onclick = rasengan;
 
-    switch (randNum) {
-        case 0: img.src = "../img/sharingan/msharingan.png";            break;
-        case 1: img.src = "../img/sharingan/msharingan-color.png";      break;
-        case 2: img.src = "../img/sharingan/sharingan.png";             break;
-        case 3: img.src = "../img/easter-eggs/rasengan.png";            break;
+    // Start with Naruto only
+    if (eggCount++ <= 3) {
+
+        // find a new picture
+        var randNum = Math.floor(Math.random() * 4);
+        while ($.inArray(randNum, chosenNums))
+            randNum = Math.floor(Math.random() * 4);
+        chosenNums.push(randNum);
+
+        switch (randNum) {
+            case 0: img.src = "../img/sharingan/msharingan.png"; break;
+            case 1: img.src = "../img/sharingan/msharingan-color.png"; break;
+            case 2: img.src = "../img/sharingan/sharingan.png"; break;
+            case 3: img.src = "../img/easter-eggs/rasengan.png"; break;
+        }
+    }
+
+    // non-Naruto easter-eggs
+    else {
+        var randNum = Math.floor(Math.random() * 6);
+        switch (randNum) {
+            case 0: img.src = "../img/easter-eggs/dragonball.png"; break;
+            case 1: img.src = "../img/easter-eggs/fairytail.png"; break;
+            case 2: img.src = "../img/easter-eggs/geass.png"; break;
+            case 3: img.src = "../img/easter-eggs/stens-gate.png"; break;
+            case 4: img.src = "../img/easter-eggs/straw-hats.png"; break;
+            case 5: img.src = "../img/easter-eggs/white-beard.png"; break;
+        }
     }
 
     // create div
