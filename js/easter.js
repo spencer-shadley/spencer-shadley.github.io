@@ -1,7 +1,8 @@
-console.log("current version - 2");
+console.log("current version - 3");
 
 /** GISD - Sharingan **/
 $("#gisd-image").click(function () {
+
     // create image
     var img = document.createElement("img");
     img.className = "img-circle img-responsive";
@@ -25,9 +26,11 @@ var easterImg = document.createElement("img");
 easterImg.className = "text-center";
 easterImg.style.width = "100%";
 easterImg.style.height = "100%";
+easterImgStr = "";
 
 function updtImg(newSrc) {
     easterImg.src = "../img/easter-eggs/" + newSrc;
+    easterImgStr = easterImg.innerHTML
 }
 
 // Android
@@ -36,7 +39,7 @@ $("#android-image").click(function () {
     bootbox.alert({
         size: 'large',
         title: 'My kind of doughnut! (me at Google HQ)',
-        message: easterImg.innerHTML,
+        message: easterImgStr,
         callback: function () {
             console.log("bootbox over and out");
         }
