@@ -33,6 +33,13 @@ $("#android-image").click(function () {
     bootbox.alert("What's up?", function () {
         console.log("called bootbox");
     });
+
+    bootbox.alert({
+        size: 'small',
+        message: "<h1>Yo</h1><br><br>More text!",
+        callback: function () { console.log("bootboxed"); }
+    })
+
 });
 
 //<li class="timeline-inverted wow rotateIn">
