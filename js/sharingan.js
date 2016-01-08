@@ -20,9 +20,10 @@ function addSharingan() {
 }
 
 // on clicking GISD the sharingan appears
-$("#gisd-image").click(function () {
-    console.log("clicked gisd");
-    addSharingan();
+$("#gisd-image").click(addSharingan());
+
+$("#android-image").click(function () {
+
 });
 
 //<li class="timeline-inverted wow rotateIn">
