@@ -218,6 +218,10 @@ header {
 
 // Sections
 
+.img-circle:hover {
+    cursor: crosshair;
+}
+
 // dark background behind projects
 #projects {
     background-color: $theme-dark;
