@@ -49,7 +49,7 @@ function rasengan() {
     var img = document.createElement("img");
     img.className = "img-circle img-responsive";
     img.alt = "Mangekyo Sharingan";
-    img.onclick = "rasengan()";
+    img.onclick = rasengan;
 
     switch (randNum) {
         case 0: img.src = "../img/sharingan/msharingan.png"; break;
