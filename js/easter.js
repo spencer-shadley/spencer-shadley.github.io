@@ -12,6 +12,7 @@ function setImg(newSrc) {
                     " style='" + easterImgStyle + "'" +
                     " >" + 
                     "You found an Easter Egg!";
+    preloadEggs();
 }
 
 // GISD - Sharingan
@@ -21,6 +22,7 @@ $("#gisd-image").click(function () {
     else clicked = true;
 
     rasengan();
+    preloadEggs();
 });
 
 function rasengan() {
@@ -59,15 +61,9 @@ function rasengan() {
     img.onclick = rasengan;
 
     // egg picking
-    if (eggCount++ < narutoEggs.length) {
-        setEgg(narutoEggs, true); // TODO: make setEgg return the string to set
-    }
-    else if (eggCount === 13) {
-        makeGeassBox();
-    }
-    else {
-        setEgg(otherEggs, false);
-    }
+    if (eggCount++ < narutoEggs.length)     setEgg(narutoEggs, true);
+    else if (eggCount === 13)               makeGeassBox();
+    else                                    setEgg(otherEggs, false);
 
     // create div
     var div = document.createElement("div");
