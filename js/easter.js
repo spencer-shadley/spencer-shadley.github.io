@@ -26,45 +26,45 @@ $("#gisd-image").click(function () {
 function rasengan() {
     console.log("rasengan!");
 
+    var narutoEggs = [
+        "../img/sharingan/msharingan.png",
+        "../img/sharingan/msharingan-color.png",
+        "../img/sharingan/sharingan.png",
+        "../img/easter-eggs/rasengan.png"
+    ];
+    var otherEggs = [
+        "../img/easter-eggs/dragonball.png",
+        "../img/easter-eggs/fairytail.png",
+        "../img/easter-eggs/geass.png",
+        "../img/easter-eggs/steins-gate.png",
+        "../img/easter-eggs/white-beard.png",
+        "../img/sharingan/msharingan.png",
+        "../img/sharingan/msharingan-color.png",
+        "../img/sharingan/sharingan.png",
+        "../img/easter-eggs/rasengan.png"
+    ];
+
     // create image
     var img = document.createElement("img");
     img.className = "img-circle img-responsive";
     img.alt = "Easter Egg " + randNum + " Special";
     img.onclick = rasengan;
 
-    // Naruto only
-    if (eggCount++ <= 3) {
+    function setEgg(eggs) {
 
         // find a new picture
-        var randNum = Math.floor(Math.random() * 4);
-        while ($.inArray(randNum, chosenNums) != -1) {
-            randNum = Math.floor(Math.random() * 4);
-        }
+        var randNum = Math.floor(Math.random() * eggs.length);
+        while ($.inArray(randNum, chosenNums) != -1)
+            randNum = Math.floor(Math.random() * eggs.length);
         chosenNums.push(randNum);
 
-        switch (randNum) {
-            case 0: img.src = "../img/sharingan/msharingan.png"; break;
-            case 1: img.src = "../img/sharingan/msharingan-color.png"; break;
-            case 2: img.src = "../img/sharingan/sharingan.png"; break;
-            case 3: img.src = "../img/easter-eggs/rasengan.png"; break;
-        }
+        img.src = eggs[randNum];
     }
 
-    // all easter-eggs
-    else {
-        var randNum = Math.floor(Math.random() * 9);
-        switch (randNum) {
-            case 0: img.src = "../img/easter-eggs/dragonball.png"; break;
-            case 1: img.src = "../img/easter-eggs/fairytail.png"; break;
-            case 2: img.src = "../img/easter-eggs/geass.png"; break;
-            case 3: img.src = "../img/easter-eggs/steins-gate.png"; break;
-            case 4: img.src = "../img/easter-eggs/white-beard.png"; break;
-            case 5: img.src = "../img/sharingan/msharingan.png"; break;
-            case 6: img.src = "../img/sharingan/msharingan-color.png"; break;
-            case 7: img.src = "../img/sharingan/sharingan.png"; break;
-            case 8: img.src = "../img/easter-eggs/rasengan.png"; break;
-        }
-    }
+    // Naruto only
+    if (eggCount++ < narutoEggs.length) setEgg(narutoEggs);
+    else if (eggCount === 10)           geassEgg();
+    else                                setEgg(otherEggs);
 
     // create div
     var div = document.createElement("div");
