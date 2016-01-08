@@ -1,4 +1,4 @@
-console.log('version - 3');
+console.log('version - 1');
 
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
@@ -51,7 +51,7 @@ $("#android-image").click(function () {
 // HomeAway
 function homeawayBox() {
     console.log("clicked homeaway");
-    setImg("banana.jpg");
+    /*setImg("banana.jpg");
     bootbox.alert({
         size: 'large',
         title: "I don't work there at this time of writing so....here's a funny banana I made :p",
@@ -59,7 +59,7 @@ function homeawayBox() {
         callback: function () {
             console.log("bootbox over and out");
         }
-    });
+    });*/
 }
 
 // PayPal
