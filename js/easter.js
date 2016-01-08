@@ -27,6 +27,7 @@ easterImg.className = "text-center";
 easterImg.style.width = "100%";
 easterImg.style.height = "100%";
 easterImgStr = "initial";
+document.appendChild(easterImg);
 
 function updtImg(newSrc) {
     easterImg.src = "../img/easter-eggs/" + newSrc;
