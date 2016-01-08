@@ -1,4 +1,4 @@
-console.log('version - 2');
+console.log('version - 3');
 
 var easterImgClass = "text-center";
 var easterImgStyle = "width: 100%; height: auto;";
