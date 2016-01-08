@@ -47,26 +47,26 @@ function rasengan() {
         "../img/easter-eggs/rasengan.png"
     ];
 
+    var geassQuotes = ["You don't want it to end here, do you?",
+                        "You appear to have a reason for living.",
+                        "If I grant you power, could you go on? I propose a deal - in exchange for this power, you must agree to make my one wish come true. Accept this contract, and you accept its conditions. While living in the world of humans, you will live unlike any other: a different providence, a different time, a different life. The Power of the King will condemn you to a life of solitude. Are you prepared for this?"
+    ];
+
     // create image
     var img = document.createElement("img");
     img.className = "img-circle img-responsive";
     img.alt = "Easter Egg Special";
     img.onclick = rasengan;
 
-    var geassQuotes = [ "You don't want it to end here, do you?",
-                        "You appear to have a reason for living.",
-                        "If I grant you power, could you go on? I propose a deal - in exchange for this power, you must agree to make my one wish come true. Accept this contract, and you accept its conditions. While living in the world of humans, you will live unlike any other: a different providence, a different time, a different life. The Power of the King will condemn you to a life of solitude. Are you prepared for this?"
-                      ];
-
     // egg picking
     if (eggCount++ < narutoEggs.length) {
-        setEgg(narutoEggs, img);
+        setEgg(narutoEggs, img, true); // TODO: make setEgg return the string to set
     }
     else if (eggCount === 13) {
-        makeGeassBox();
+        makeGeassBox(img);
     }
     else {
-        setEgg(otherEggs, img);
+        setEgg(otherEggs, img, false);
     }
 
     // create div
@@ -82,18 +82,18 @@ function rasengan() {
     $("#timeline-list").append(li);
 }
 
-function setEgg(eggs, img) {
+function setEgg(eggs, img, naruto) {
 
     // find a new picture
     var randNum = Math.floor(Math.random() * eggs.length);
-    while ($.inArray(randNum, chosenNums) != -1)
+    while (naruto && $.inArray(randNum, chosenNums) != -1)
         randNum = Math.floor(Math.random() * eggs.length);
     chosenNums.push(randNum);
 
     img.src = eggs[randNum];
 }
 
-function makeGeassBox() {
+function makeGeassBox(img) {
     bootbox.alert({
         size: 'small',
         title: 'Contract',
@@ -106,10 +106,10 @@ function makeGeassBox() {
                     console.log("accepted");
 
                     if (geassQuotes.empty() !== 0)
-                        makeGeassBox();
+                        makeGeassBox(img);
                     else {
                         console.log("Geass activated.");
-                        setEgg(geassEggs);
+                        setEgg(geassEggs, img, false);
                     }
 
                 }
@@ -119,7 +119,7 @@ function makeGeassBox() {
                 className: "btn-danger",
                 callback: function () {
                     console.log("rejected");
-                    setEgg(otherEggs);
+                    setEgg(otherEggs, img, false);
                 }
             }
         }
