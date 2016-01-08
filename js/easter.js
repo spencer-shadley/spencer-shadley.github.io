@@ -58,12 +58,11 @@ function rasengan() {
             case 1: img.src = "../img/easter-eggs/fairytail.png"; break;
             case 2: img.src = "../img/easter-eggs/geass.png"; break;
             case 3: img.src = "../img/easter-eggs/steins-gate.png"; break;
-            case 4: img.src = "../img/easter-eggs/straw-hats.png"; break;
-            case 5: img.src = "../img/easter-eggs/white-beard.png"; break;
-            case 6: img.src = "../img/sharingan/msharingan.png"; break;
-            case 7: img.src = "../img/sharingan/msharingan-color.png"; break;
-            case 8: img.src = "../img/sharingan/sharingan.png"; break;
-            case 9: img.src = "../img/easter-eggs/rasengan.png"; break;
+            case 4: img.src = "../img/easter-eggs/white-beard.png"; break;
+            case 5: img.src = "../img/sharingan/msharingan.png"; break;
+            case 6: img.src = "../img/sharingan/msharingan-color.png"; break;
+            case 7: img.src = "../img/sharingan/sharingan.png"; break;
+            case 8: img.src = "../img/easter-eggs/rasengan.png"; break;
         }
     }
 
