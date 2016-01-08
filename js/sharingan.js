@@ -1,3 +1,5 @@
+console.log("current version - 1");
+
 /** GISD - Sharingan **/
 $("#gisd-image").click(addSharingan());
 
