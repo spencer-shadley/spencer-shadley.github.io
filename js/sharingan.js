@@ -16,8 +16,16 @@ li.addClass("wow");
 li.addClass("rotateIn");
 
 // add to timeline
-div.appendChild(img);
-$("#timeline-list").append(li);
+function addSharingan() {
+    div.appendChild(img);
+    $("#timeline-list").append(li);
+}
+
+// on clicking GISD the sharingan appears
+$("#gisd-image").click(function () {
+    console.log("clicked gisd");
+    addSharingan();
+});
 
 //<li class="timeline-inverted wow rotateIn">
 //    <div class="timeline-image">
