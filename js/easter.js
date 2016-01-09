@@ -227,13 +227,18 @@ $("#ie-egg").click(function () {
 
 // IE Face
 $("#ie-face-egg").click(function () {
-    setImg("ie-graph.jpg");
+    pictureBox( "ie-graph.jpg",
+                "Consumers think they know the pain");
+});
+
+function pictureBox(imgName, titleText) {
+    setImg(imgName);
     bootbox.alert({
         size: 'large',
-        title: "Consumers think they know the pain but they don't",
+        title: titleText,
         message: easterImg,
         callback: function () {
             console.log("bootbox over and out");
         }
     });
-});
+}
