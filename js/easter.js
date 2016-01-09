@@ -47,7 +47,9 @@ function rasengan() {
         "../img/sharingan/msharingan.png",
         "../img/sharingan/msharingan-color.png",
         "../img/sharingan/sharingan.png",
-        "../img/easter-eggs/rasengan.png"
+        "../img/easter-eggs/rasengan.png",
+        "../img/easter-eggs/pokeball-pixels.png",
+        "../img/easter-eggs/pokeball-cyndaquil.png"
     ];
 
     var geassQuotes = [ "If I grant you power, could you go on? I propose a deal - in exchange for this power, you must agree to make my one wish come true. Accept this contract, and you accept its conditions. While living in the world of humans, you will live unlike any other: a different providence, a different time, a different life. The Power of the King will condemn you to a life of solitude. Are you prepared for this?",

@@ -45,6 +45,8 @@ function preloadEggs() {
     imageLocs.push("../img/easter-eggs/ralph.gif");
     imageLocs.push("../img/easter-eggs/ie-graph.jpg");
     imageLocs.push("../img/easter-eggs/ie-pokemon.jpg");
+    imageLocs.push("../img/easter-eggs/pokeball-pixels.png");
+    imageLocs.push("../img/easter-eggs/pokeball-cyndaquil.png");
 
     for (var i = 0; i < imageLocs.length; ++i) {
         images[i] = new Image();
