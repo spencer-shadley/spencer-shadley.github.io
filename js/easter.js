@@ -15,7 +15,7 @@ function setImg(newSrc) {
     preloadEggs();
 }
 
-// GISD - Sharingan
+// GISD - Infinite Circles
 $("#gisd-image").click(function () {
 
     if (clicked) return;
@@ -192,6 +192,19 @@ $("#details-image").click(function () {
     bootbox.alert({
         size: 'large',
         title: 'She helped make this site',
+        message: easterImg,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
+    });
+});
+
+// Easter Eggs Easter Egg (yes, that is confusing)
+$("#creative-egg").click(function () {
+    setImg("ralph.gif");
+    bootbox.alert({
+        size: 'large',
+        title: 'Keep going, there are more to be found!',
         message: easterImg,
         callback: function () {
             console.log("bootbox over and out");
