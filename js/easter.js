@@ -15,15 +15,17 @@ function setImg(newSrc) {
     preloadEggs();
 }
 
-// GISD - Infinite Circles
-$("#gisd-image").click(function () {
-
-    if (clicked) return;
-    else clicked = true;
-
-    rasengan();
-    preloadEggs();
-});
+function pictureBox(imgName, titleText) {
+    setImg(imgName);
+    bootbox.alert({
+        size: 'large',
+        title: titleText,
+        message: easterImg,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
+    });
+}
 
 function rasengan() {
     console.log("rasengan!");
@@ -121,124 +123,57 @@ function rasengan() {
     }
 }
 
+// GISD - Infinite Circles
+$("#gisd-image").click(function () {
+
+    if (clicked) return;
+    else clicked = true;
+
+    rasengan();
+    preloadEggs();
+});
+
 // Android
 $("#android-image").click(function () {
-    setImg("android-doughnut.jpg");
-    bootbox.alert({
-        size: 'large',
-        title: 'My kind of doughnut! (me at Google HQ)',
-        message: easterImg,
-        callback: function () {
-            console.log("bootbox over and out");
-        }
-    });
+    pictureBox("android-doughnut.jpg", "My kind of doughnut! (me at Google HQ)");
 });
 
 // HomeAway
 $("#homeaway-image").click(function () {
-    setImg("banana.jpg");
-    bootbox.alert({
-        size: 'large',
-        title: "I don't work there at this time of writing so....here's a funny banana I made :p",
-        message: easterImg,
-        callback: function () {
-            console.log("bootbox over and out");
-        }
-    });
+    pictureBox("banana.jpg", "I don't work there at this time of writing so....here's a funny banana I made :p");
 });
 
 // PayPal
 $("#paypal-image").click(function () {
-    setImg("paypal-ceo.jpg");
-    bootbox.alert({
-        size: 'large',
-        title: 'Me and Dan Schulman (CEO of PayPal)',
-        message: easterImg,
-        callback: function () {
-            console.log("bootbox over and out");
-        }
-    });
+    pictureBox("paypal-ceo.jpg", "Me and Dan Schulman (CEO of PayPal)");
 });
 
 // IBM
 $("#ibm-image").click(function () {
-    setImg("floppy-disk.jpg");
-    bootbox.alert({
-        size: 'large',
-        title: 'The oldest of companies',
-        message: easterImg,
-        callback: function () {
-            console.log("bootbox over and out");
-        }
-    });
+    pictureBox("floppy-disk.jpg", "The oldest of companies");
 });
 
 // Interests
 $("#interests-image").click(function () {
-    setImg("eyepatch.jpg");
-    bootbox.alert({
-        size: 'large',
-        title: 'Why so serious?',
-        message: easterImg,
-        callback: function () {
-            console.log("bootbox over and out");
-        }
-    });
+    pictureBox("eyepatch.jpg", "Why so serious?");
 });
 
 // Details
 $("#details-image").click(function () {
-    setImg("daisy-straw.jpg");
-    bootbox.alert({
-        size: 'large',
-        title: 'She helped make this site',
-        message: easterImg,
-        callback: function () {
-            console.log("bootbox over and out");
-        }
-    });
+    pictureBox("daisy-straw.jpg", "She helped make this site");
 });
 
 // Creative Easter Egg
 $("#creative-egg").click(function () {
-    setImg("ralph.gif");
-    bootbox.alert({
-        size: 'large',
-        title: 'Keep going, there are more to be found!',
-        message: easterImg,
-        callback: function () {
-            console.log("bootbox over and out");
-        }
-    });
+    pictureBox("ralph.gif", "Keep going, there are more to be found!");
 });
 
 // IE
 $("#ie-egg").click(function () {
-    setImg("ie-pokemon.jpg");
-    bootbox.alert({
-        size: 'large',
-        title: "But it's pre-installed!",
-        message: easterImg,
-        callback: function () {
-            console.log("bootbox over and out");
-        }
-    });
+    pictureBox("ie-pokemon.jpg", "But it's pre-installed!");
 });
 
 // IE Face
 $("#ie-face-egg").click(function () {
-    pictureBox( "ie-graph.jpg",
-                "Consumers think they know the pain");
+    pictureBox( "ie-graph.jpg", "Consumers think they know the pain");
 });
-
-function pictureBox(imgName, titleText) {
-    setImg(imgName);
-    bootbox.alert({
-        size: 'large',
-        title: titleText,
-        message: easterImg,
-        callback: function () {
-            console.log("bootbox over and out");
-        }
-    });
-}
