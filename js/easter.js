@@ -35,7 +35,6 @@ function rasengan() {
         "../img/easter-eggs/rasengan.png"
     ];
     var geassEggs = [
-        "../img/easter-eggs/geass.png",
         "../img/easter-eggs/geass.png"
     ];
     var otherEggs = [
