@@ -199,12 +199,38 @@ $("#details-image").click(function () {
     });
 });
 
-// Easter Eggs Easter Egg (yes, that is confusing)
+// Creative Easter Egg
 $("#creative-egg").click(function () {
     setImg("ralph.gif");
     bootbox.alert({
         size: 'large',
         title: 'Keep going, there are more to be found!',
+        message: easterImg,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
+    });
+});
+
+// IE
+$("#ie-egg").click(function () {
+    setImg("ie-pokemon.jpg");
+    bootbox.alert({
+        size: 'large',
+        title: "But it's pre-installed!",
+        message: easterImg,
+        callback: function () {
+            console.log("bootbox over and out");
+        }
+    });
+});
+
+// IE Face
+$("#ie-face-egg").click(function () {
+    setImg("ie-graph.jpg");
+    bootbox.alert({
+        size: 'large',
+        title: "Consumers think they know the pain but they don't",
         message: easterImg,
         callback: function () {
             console.log("bootbox over and out");

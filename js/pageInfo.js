@@ -12,7 +12,7 @@ link.rel = 'shortcut icon';
 link.href = '../img/favicon.png';
 document.getElementsByTagName('head')[0].appendChild(link);
 
-// Preload images of androids
+// Preload androids
 function preloadImages() {
     var images = new Array();
     for (var i = 1; i <= 8; ++i) {
@@ -24,8 +24,8 @@ setTimeout("preloadImages()", 10000);
 
 // Preload eggs
 function preloadEggs() {
-    var imageLocs = new Array();
-    var images = new Array();
+    var imageLocs   = new Array();
+    var images      = new Array();
 
     imageLocs.push("../img/sharingan/msharingan.png");
     imageLocs.push("../img/sharingan/msharingan-color.png");
@@ -42,6 +42,9 @@ function preloadEggs() {
     imageLocs.push("../img/easter-eggs/rasengan.png");
     imageLocs.push("../img/easter-eggs/steins-gate.png");
     imageLocs.push("../img/easter-eggs/white-beard.png");
+    imageLocs.push("../img/easter-eggs/ralph.gif");
+    imageLocs.push("../img/easter-eggs/ie-graph.jpg");
+    imageLocs.push("../img/easter-eggs/ie-pokemon.jpg");
 
     for (var i = 0; i < imageLocs.length; ++i) {
         images[i] = new Image();
