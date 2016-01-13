@@ -24,11 +24,11 @@ See the website <a href="http://spencer-shadley.github.io/" target="_blank">here
  - icomoon
  - Font Awesome
  - Google Analytics
- - HTML, CSS, etc.
+ - HTML, CSS, JavaScript
 
 ## Features
 
- - Reactive Design (try resizing the site)
+ - Responsive Design (try resizing the site)
  - Optimized loading (automatically caches at various times)
  - Live resume (automatically pulls the latest version of my resume)
  - 12 Easter Eggs (see if you can find the Geass)
