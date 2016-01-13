@@ -1,6 +1,8 @@
 # Personal Portfolio Website
 
-<img src="http://spencer-shadley.github.io/img/dancing-spencer.gif"></img>
+<div style="text-align:center">
+	<img src="http://spencer-shadley.github.io/img/dancing-spencer.gif" alt="dancing android"/>
+</div>
 See the website <a href="http://spencer-shadley.github.io/" target="_blank">here</a>
 
 ## What's Inside
