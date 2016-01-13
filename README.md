@@ -5,8 +5,8 @@ See the website <a href="http://spencer-shadley.github.io/" target="_blank">here
 ## What's Inside
 
  - A quick about me
- - Timeline of my career
- - 6 highlighted projects
+ - Career Timeline
+ - Six highlighted projects
  - Resume
  - Contact Info
 
@@ -24,11 +24,11 @@ See the website <a href="http://spencer-shadley.github.io/" target="_blank">here
  - icomoon
  - Font Awesome
  - Google Analytics
+ - HTML, CSS, etc.
 
 ## Features
 
- - Reactive Design (try resizing your browser)
+ - Reactive Design (try resizing the site)
  - Optimized loading (automatically caches at various times)
  - Live resume (automatically pulls the latest version of my resume)
- - Animations
  - 12 Easter Eggs (see if you can find the Geass)
