@@ -1,7 +1,7 @@
 # Personal Portfolio Website
 
 See the website <a href="http://spencer-shadley.github.io/" target="_blank">here</a>
-<iframe src="http://spencer-shadley.github.io/"></iframe>
+<img src="http://spencer-shadley.github.io/img/dancing-spencer.gif"></img>
 
 ## What's Inside
 
