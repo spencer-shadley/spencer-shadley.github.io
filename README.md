@@ -1,14 +1,34 @@
-# Creative Theme for Jekyll
+# Personal Portfolio Website
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+See the website [here]<http://spencer-shadley.github.io/>
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
+## What's Inside
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
+ - A quick about me
+ - Timeline of my career
+ - 6 highlighted projects
+ - Resume
+ - Contact Info
 
-## To use the Creative Theme template in your project
+## Technologies Used
 
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
+ - Jekyll
+ - GitHub Pages
+ - Creative Theme by Start Bootstrap
+ - jQuery
+ - classie.js
+ - wow.js
+ - animate.css
+ - bootbox
+ - bootstrap
+ - icomoon
+ - Font Awesome
+ - Google Analytics
 
+## Features
+
+ - Reactive Design (try resizing your browser)
+ - Optimized loading (automatically caches at various times)
+ - Live resume (automatically pulls the latest version of my resume)
+ - Animations
+ - 12 Easter Eggs (see if you can find the Geass)
