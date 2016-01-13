@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-See the website [here](http://spencer-shadley.github.io/)
+See the website <a href="http://spencer-shadley.github.io/" target="_blank">here</a>
 
 ## What's Inside
 
