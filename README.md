@@ -27,7 +27,7 @@ See the website <a href="http://spencer-shadley.github.io/" target="_blank">here
  - Font Awesome
  - Google Analytics
  - classie.js
- - HTML, CSS, JavaScript
+ - HTML, SCSS, JavaScript
 
 ## Features
 
