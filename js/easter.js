@@ -142,7 +142,7 @@ $("#android-image").click(function () {
 
 // HomeAway
 $("#homeaway-image").click(function () {
-    pictureBox("banana.jpg", "I don't work there at this time of writing so....here's a funny banana I made :p");
+    pictureBox("banana.jpg", "It's still a secret so here's a funny banana I made :p");
 });
 
 // PayPal
