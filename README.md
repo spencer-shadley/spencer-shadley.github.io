@@ -19,15 +19,15 @@ See the website <a href="http://spencer-shadley.github.io/" target="_blank">here
  - GitHub Pages
  - Creative Theme by Start Bootstrap
  - jQuery
- - classie.js
- - wow.js
- - animate.css
- - bootbox
- - bootstrap
- - icomoon
+ - WOW.js
+ - Animate.css
+ - Bootbox
+ - Bootstrap
+ - IcoMoon
  - Font Awesome
  - Google Analytics
- - HTML, CSS, JavaScript
+ - classie.js
+ - HTML, SCSS, JavaScript
 
 ## Features
 
