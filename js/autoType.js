@@ -1,8 +1,8 @@
-var text = ["Software Developer", "University of Texas Student", "Entrepreneur"];
+var text = ["Software Engineer", "University of Texas Alumni", "Entrepreneur"];
 var delay = 50;
 var currentWord = 0;
 var currentChar = 0;
-var dest = document.getElementById("messages");;
+var dest = document.getElementById("messages");
 
 function type() {
     dest.innerHTML = text[currentWord].substr(0, ++currentChar);
