@@ -85,15 +85,18 @@ function rasengan() {
     li.appendChild(div);
     $("#timeline-list").append(li);
 
-    function setEgg(eggs, naruto) {
+    function setEgg(eggs, isNaruto) {
 
         // find a new picture
         var randNum = Math.floor(Math.random() * eggs.length);
-        while (naruto && $.inArray(randNum, chosenNums) != -1)
+        while ($.inArray(randNum, chosenNums) != -1)
             randNum = Math.floor(Math.random() * eggs.length);
         chosenNums.push(randNum);
 
         img.src = eggs[randNum];
+
+        if(chosenNums.length === eggs.length)
+            chosenNums = [];
     }
 
     function makeGeassBox() {
