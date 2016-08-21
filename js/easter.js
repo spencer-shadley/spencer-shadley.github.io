@@ -29,15 +29,6 @@ function pictureBox(imgName, titleText) {
 
 function rasengan() {
     console.log("rasengan!");
-    $.ajax({
-        url: "http://spencer-shadley.github.io/img/easter-eggs",
-        success: function(data){
-            $(data).find("td > a").each(function(){
-                // will loop through
-                alert("Found a file: " + $(this).attr("href"));
-            });
-        }
-    });
 
     var narutoEggs = [
         "../img/sharingan/msharingan.png",
