@@ -117,9 +117,9 @@ function rasengan() {
                             makeGeassBox();
                         else {
                             console.log("Geass activated.");
-                            setEgg(geassEggs, false);
+                            // setEgg(geassEggs, false);
+                            img.src = "../img/easter-eggs/geass.png";
                         }
-
                     }
                 },
                 danger: {
