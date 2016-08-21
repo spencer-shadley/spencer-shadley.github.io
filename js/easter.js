@@ -27,6 +27,7 @@ function pictureBox(imgName, titleText) {
     });
 }
 
+alert('hi');
 $.ajax({
     url: "http://spencer-shadley.github.io/img/easter-eggs",
     success: function(data){
