@@ -69,9 +69,9 @@ function rasengan() {
     img.onclick = rasengan;
 
     // egg picking
-    if (eggCount++ < narutoEggs.length)     setEgg(narutoEggs, true);
+    if (eggCount++ < narutoEggs.length)     setEgg(narutoEggs);
     else if (eggCount === 13)               makeGeassBox();
-    else                                    setEgg(otherEggs, false);
+    else                                    setEgg(otherEggs);
 
     // create div
     var div = document.createElement("div");
@@ -85,7 +85,7 @@ function rasengan() {
     li.appendChild(div);
     $("#timeline-list").append(li);
 
-    function setEgg(eggs, isNaruto) {
+    function setEgg(eggs) {
 
         // find a new picture
         var randNum = Math.floor(Math.random() * eggs.length);
@@ -93,8 +93,10 @@ function rasengan() {
             randNum = Math.floor(Math.random() * eggs.length);
         chosenNums.push(randNum);
 
+        // set the picture
         img.src = eggs[randNum];
 
+        // reset the chosen eggs if all have been chosen
         if(chosenNums.length === eggs.length)
             chosenNums = [];
     }
