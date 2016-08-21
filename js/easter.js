@@ -142,7 +142,7 @@ $("#android-image").click(function () {
 
 // Bizler
 $("#bizler-image").click(function () {
-    pictureBox("banana.jpg", "It's still a secret so here's a funny banana I made :p");
+    pictureBox("banana.jpg", "It's still a secret so here's a banana I made");
 });
 
 // PayPal
