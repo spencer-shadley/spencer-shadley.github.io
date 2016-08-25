@@ -17,7 +17,7 @@ function preloadEggs() {
     imageLocs.push("../img/sharingan/msharingan-color.png");
     imageLocs.push("../img/sharingan/sharingan.png");
     imageLocs.push("../img/easter-eggs/android-doughnut.jpg");
-    imageLocs.push("../img/easter-eggs/banana.jpg");
+    imageLocs.push("../img/easter-eggs/classified.jpg");
     imageLocs.push("../img/easter-eggs/daisy-straw.jpg");
     imageLocs.push("../img/easter-eggs/dragonball.png");
     imageLocs.push("../img/easter-eggs/eyepatch.jpg");
